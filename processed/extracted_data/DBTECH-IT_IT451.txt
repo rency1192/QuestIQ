@@ -1,0 +1,181 @@
+Exam Date & Time: 18-Nov-2024 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Seventh Semester of BTech. (IT)
+University Theory Examination November 2024
+Software Engineering [IT451]
+Marks: 70 Duration: 195 mins.
+Section I(MCQ)
+
+Do as directed.
+1 RAD Software process model stands for _____ . (1)
+Rapid Application Relative Application Rapid Application Recent Application
+Development. Development. Design. Development.
+2 The term which best defines - "For a component to be composable, all external interactions must take (1)
+place through publicly defined interfaces" is:
+Standardized Independent Composable Documented
+3 Defect Density Calculation: If a project delivered 5000 lines of code and identified 50 defects during (1)
+the testing phase, what is the defect density?
+0.5 defects per 5 defects per 10 defects per 20 defects per
+KLOC KLOC KLOC KLOC
+4 Alpha and Beta testing are the forms of: (1)
+System Acceptance Unit Integration
+Testing Testing Testing Testing
+5 A good software design must have: (1)
+High module coupling, Low module coupling, High module coupling, Low module coupling,
+Low module cohesion low module cohesion High module cohesion High module cohesion
+6 If the purchased component fail to perform as expected, then such type of risk is known as the _____ (1)
+Product risk Project risk Business risk Programming risk
+7 Among the mentioned options, which option does not measure the size of the software ? (1)
+Function Size of
+KLOC None of the mentioned
+Points module
+8 Testing can be best described as ______ (1)
+Evaluating deliverable to find A stage of all
+Finding broken code None of the mentioned
+errors projects
+9 If P is risk probability, L is loss, then Risk Exposure (RE) is computed as (1)
+RE = RE = 2* P
+RE = P/L RE = P + L
+P*L *L
+10 _____ is not a phase of "bathtub curve" of hardware reliability? (1)
+Useful
+Wear-out Time Burn-in
+Life
+11 Choose the correct option according to the given statement. (1)
+Statement 1: Software is a physical rather than a logical system element.
+Statement 2: Computer software is the product that software engineers design and built
+Statement 3: Software is a logical rather than a physical system element.
+Statement 4: Software is a set of application programs that are built by software engineers.
+
+Statement 1 and 2 are Only Statement 2 and 3 are Statement 2 and 3 and 4 are All statements are
+correct. correct. correct. correct
+12 The main focus of the "Component Based Software Engineering" is on: (1)
+Software
+Coupling Reusability None of the above
+planning
+13 Rank the mentioned categories of the coupling between the modules from least desirable to most (1)
+desirable
+I. Content coupling
+II. Common coupling
+III. Control coupling
+IV. Stamp coupling
+V. Data coupling
+V-IV-III-II-I I-II-III-IV-V I-III-V-II-IV IV-II-V-III-I
+14 Arrange the following scrum practices in the order they are carried out (1)
+1. Sprint review meet
+2. Sprint
+3. Sprint retrospective meet
+4. Sprint Planning
+5. Daily scrum meet
+1,2,5,4,3 4,2,5,3,1 4,5,2,3,1 4,2,5,1,3
+15 Which of the following is not a core step of Six Sigma? (1)
+Define Control Measure Analyse
+16 Imagine a pharmaceutical company planning to launch a new drug. During the development phase, a (1)
+risk assessment reveals a 73.6% chance that the production line could encounter delays due to
+equipment malfunctions or regulatory approval hurdles. A 73.6% risk is considered as_______
+very low low moderate high
+17 The focus of the data of Reverse engineering is mainly on: (1)
+Internal data
+Database structures ALL of the mentioned None of the mentioned
+structures
+18 CMM stands for: (1)
+Capability Management Conservative Maturity Capability Maturity Capability Maturity
+Module Model Module Model
+19 Which model is also known as the classic life cycle or the Waterfall model? (1)
+Iterative Development Linear Sequential Development RAD Model. Incremental Development
+20 The five activities which are encompassed in a generic process framework for software engineering (1)
+are ______
+Communication, risk Communication, Planning, Analysis, designing, None of
+management, measurement, Modeling, construction, programming, debugging, the
+production, deployment. deployment. maintenance above.
+Section II(Descriptive)
+
+Do as directed.
+1 Which life cycle model would you follow for developing software products for each of the following (5)
+application? Enumerate the reasons for your choice of a particular life cycle model.
+1. A well-understood data processing application.
+2. A new software product that would connect computers through satellite communication.
+Assume that your team has no previous experience in developing satellite communication
+software.
+3. A software product that would function as the controller of a telephone switching system.
+4. A new library automation software that would link various libraries in the city.
+
+5. An extremely large software that would provide, monitor, and control cellular communication
+among its subscribers using a set of revolving satellites.
+2 Explain and compare the Waterfall Model and Incremental Model of software development. Discuss (5)
+the key features, advantages, and limitations of each, and provide examples of scenarios where each
+model would be most appropriate.
+3 Describe the Agile Model in software development. Explain its core principles, key practices, and how (5)
+it improves flexibility, collaboration, and customer satisfaction compared to traditional development
+models.
+4 Why is the Software Requirements Specification (SRS) document often referred to as a 'black box' (5)
+specification of a system? What key elements or contents are typically included in an SRS?
+5 Your university is organizing "Spoural 2025," an event with various sports competitions, and needs an (5)
+online system for student registration. Both on-campus and online students should be able to register,
+view event schedules, and track their participation.
+Each student will have an account to register for multiple events if eligible. Coaches and coordinators
+need access to manage participants, schedules, and notifications. The system should store student
+information, selected events, schedules, and send notifications about updates.
+Draw a class diagram with the following elements:
+Student (ID, name, contact, preferences)
+Event (ID, name, schedule, eligibility, slots)
+Registration (links students to events)
+Coordinator (manages events and communicates with students)
+Notification (handles updates to students)
+6 The university is organizing "Spoural 2025," a sports event, and requires an online registration (5)
+system for both on-campus and online students. The system should allow students to register, view
+event schedules, and track their participation. Students can log in, select eligible events, and receive
+notifications about updates or changes.
+Coaches and coordinators need to access participant lists, update event schedules, and manage
+logistics. The system should store data, including student profiles, event details, registration records,
+and schedules, and it should send automated notifications to registered students.
+Draw a Data Flow Diagram (DFD) to illustrate the flow of information within this system. Your DFD
+should include:
+Processes for student registration, event selection, schedule management, and notification.
+Data Stores for student information, event details, and registration records.
+External Entities such as Students, Coaches, and Coordinators.
+Data Flows between processes, data stores, and external entities to show how data is input,
+processed, and output within the registration system.
+Section III(Descriptive)
+
+Do as directed.
+1 You are testing a bank's new online loan application portal. Users enter their details, income, loan (5)
+amount, type, and term to check eligibility. The system has specific requirements:
+Income: ₹1,600,000 - ₹16,000,000 annually.
+Loan Amount: Varies by type (e.g., Personal Loan: ₹80,000 - ₹4,000,000; Home Loan:
+₹800,000 - ₹40,000,000).
+Loan Term: 1 to 30 years, depending on type.
+Eligibility Message: "Ineligible" if income is outside the range.
+Tasks:
+1. Define equivalence classes for income, loan amount, and term.
+2. Identify boundary values and create test cases for values just below, at, and above each
+boundary.
+3. Suggest special value tests (e.g., zero, negative, extreme values).
+Provide test cases for each strategy and the expected results to ensure accurate eligibility checks.
+2
+
+Define the roles in Scrum? Explain Agile software development process in detail. Differentiate (5)
+between Scrum and Sprint
+3 Discuss the 4 P's of project management. Why does project management follow a specific order for (5)
+the four P's?
+4 Define reverse engineering and re-engineering in the context of software development for the (5)
+mentioned scenario. What are the primary objectives of reverse engineering?
+Scenario:
+Imagine a software development team is tasked with updating an outdated application used for
+inventory management. The application's original source code documentation is missing, and it's built
+using an old programming language that new team members are unfamiliar with. In this case, the
+team might use reverse engineering to analyze and understand the code's structure and
+functionality, making it easier to improve or modernize the application. They could then proceed with
+re-engineering by refactoring the code, updating it to a newer language, or enhancing its features to
+meet current business requirements.
+5 List out the types of software risks? What are the risk identification and risk avoidance? (5)
+6 A university's online enrollment system allows students to register for courses each semester. A (5)
+student logs in, searches for courses, adds selected courses to their cart, and checks out. The
+system then validates prerequisites and schedule, processes payment, confirms enrollment, sends a
+confirmation email, and updates the student's status.
+Task: Create a sequence diagram to represent this process, including interactions between:
+Student: Searches, adds courses, and checks out.
+Course Catalog: Provides course details.
+Enrollment Validator: Checks prerequisites and conflicts.
+Payment Processor: Processes payment.
+Enrollment System: Sends confirmation and updates status.

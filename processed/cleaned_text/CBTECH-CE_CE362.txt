@@ -1,0 +1,132 @@
+Exam Date & Time: 18-Dec-2025 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+University Theory Examination (Supplementary Exam - 1) December 2025
+Fifth Semester of BTECH (CE)
+MACHINE LEARNING [CE362]
+Marks: 70 Duration: 195 mins.
+Section I
+Answer all the questions. Section Duration: 40 mins
+1 Which method is commonly used to handle missing numerical values in a dataset? (1)
+Mean
+One-hot encoding PCA Bagging
+imputation
+2 Why is feature scaling important before applying gradient descent? (1)
+It removes duplicate It helps the algorithm converge It increases model
+It reduces overfitting
+features faster complexity
+3 A model shows train accuracy = 55% and test accuracy = 60%. What does this indicate? (1)
+Noisy
+Underfitting Overfitting Perfect generalization
+dataset
+4 In logistic regression, which activation function is typically used in the output layer? (1)
+ReLU Softmax Sigmoid Tanh
+5 What is the primary goal of PCA? (1)
+Increasing number of Dimensionality Dataset
+Classification
+features reduction normalization
+6 If DBSCAN labels many points as noise, what could be a possible reason? (1)
+Too many
+Too large epsilon Too small epsilon High learning rate
+clusters
+7 What is the key idea behind boosting methods? (1)
+Train models independently and average Train models sequentially, focusing on Remove weak learners from the Use only linear
+them errors ensemble models
+8 Why are ensemble methods often better than single models? (1)
+They reduce variance and average out They always reduce training They eliminate preprocessing
+They avoid the need for validation
+errors time steps
+9 You want to build an image classifier with limited computational power. Which approach is best? (1)
+Use transfer learning with a pretrained Disable pooling layers
+Train a CNN from scratch Use a very deep CNN architecture
+model completely
+10 Which of the following best explains why ReLU is commonly used in hidden layers of deep neural networks? (1)
+It always prevents It introduces non-linearity and is computationally It reduces the number of It removes the need for
+overfitting efficient parameters backpropagation
+11 A dataset contains extreme values that heavily affect the mean but not the median. Which preprocessing technique is most suitable to handle this issue? (1)
+Robust scaling using Mean Z-score
+median imputation One-hot encoding normalization
+12 Why is cross-validation preferred over a single train-test split? (1)
+It eliminates the need for hyperparameter It provides a more reliable estimate of model It reduces dataset It always improves training
+tuning performance size accuracy
+13 A regression model has low training error and high test error. Which change is most appropriate? (1)
+Reduce training
+Increase model complexity Remove validation set Apply regularization
+data
+14 Which metric is most appropriate when false negatives are more costly than false positives? (1)
+Mean Squared
+Precision Accuracy Recall
+Error
+15 Which distance metric is most suitable for text data represented using TF-IDF vectors? (1)
+Manhattan distance Cosine similarity Euclidean distance Hamming distance
+16 In hierarchical clustering, why does single-linkage often suffer from the chaining effect? (1)
+It requires predefined number of It merges clusters based on farthest It merges clusters based on closest It uses average
+clusters points points distance
+17 How does Gradient Boosting primarily reduce model error? (1)
+By increasing learning rate By averaging predictions of independent By training weak learners on random By sequentially correcting previous model
+automaticall models subset errors
+Page #1
+18 What is the main drawback of boosting algorithms compared to bagging? (1)
+Sensitivity to noisy data and
+Lower accuracy Inability to handle classification tasks Higher bias
+outliers
+19 Increasing depth in a CNN mainly helps in learning___. (1)
+Low-level edge features High-level abstract Only color
+Only spatial resolution
+only features information
+20 Why does using padding in convolutional layers help deep CNNs? (1)
+It prevents loss of spatial information at
+It removes the need for pooling It reduces number of filters It eliminates overfitting
+borders
+Section II
+Answer 5 out of 7 questions.
+1 When is accuracy not a good measure for classification tasks? Give the equation of other evaluation measures that will be used instead of accuracy for the (5)
+classification, and explain the use of each evaluation measure.
+2 The NN task is to classify the data of three animals based on certain features. (5)
+The size of W[1] is 4×3, and there are three biases in one of the Hidden layers.
+Create a Neural Network architecture based on the given data and answer below two questions.
+1. This is _____ Layer Neural Network.
+2. Find the layer-wise and total parameters.
+3 A decision tree is to be constructed using the ID3 algorithm to classify whether an employee will receive a Promotion (Yes/No) based on the attributes (5)
+Experience, Performance, and Training. The dataset is given below in the table. Determine which attribute should be selected as the root node for the decision
+tree using the ID3 algorithm. Show detailed calculations of Entropy and Information Gain for attributes to justify the choice.
+4 Consider a two-dimensional dataset consisting of the following data points (8,9),(1,2),(10,12),(2,3),(9,11). (5)
+The K-Means clustering algorithm is to be applied with K = 2, using Euclidean distance as the distance metric. The initial centroids
+are specified as:
+Centroid 1: (1, 2)
+Centroid 2: (9, 11)
+1) Determine the cluster assignment of each data point by computing its Euclidean distance from the given centroids.
+2) Compute the updated centroid positions for each cluster after the completion of the first iteration.
+5 Write the Gradient descent learning algorithm. (5)
+Now, given a linear regression problem with parameters θ₀ and θ₁ initialized as θ₀ = 0.4 and θ₁ = -0.4, apply one iteration of the gradient descent algorithm
+using a learning rate (α) of 0.01. The partial derivatives of the cost function with respect to θ₀ and θ₁ are provided as ∂J/∂θ₀ = -4 and ∂J/∂θ₁ = 2. Compute
+the updated values of θ₀ and θ₁.
+6 A logistic regression model is trained to predict the risk of diabetes. The dataset includes the following features: (5)
+Glucose Level: 80-200,
+Age: 18-90,
+BMI: 15-45,
+Gender (0 = Male, 1 = Female)
+Which features need to be scaled and why? Which scaling method is appropriate? Should "Gender" be scaled?
+7 Design a small machine learning pipeline to classify whether a customer will purchase a product using features such as Age, Income, and Previous (5)
+Purchase History. Describe how you would preprocess the data, choose an appropriate model, and outline the steps to train it. Propose suitable evaluation
+metrics and justify why they are appropriate for this problem.
+Section III
+Answer 5 out of 7 questions.
+1 The Min-Max Scaler, a Normalization technique, is applied on the Student Performance Analysis case (5)
+study with the following dataset:
+Math Scores: [85, 90, 78, 92, 88]
+Science Scores: [78, 85, 92, 88, 90]
+English Scores: [88, 85, 92, 90, 78]
+(a) Calculate the scaled values for each subject and present the transformed dataset in a tabular format
+[e.g. Original Value and Scaled Value].
+(b) Identify scenarios where this scaling technique may not be optimal.
+2 Explain the concept of Gradient Boosting. How does it combine weak learners to form a strong model? (5)
+Page #2
+3 Why is CNN preferred for Image Data? What are the different layers in CNN? Explain each in brief. (5)
+4 What is Supervised, Unsupervised, and Reinforcement learning? Explain each with a suitable example. (5)
+5 Define the below terms: 1) Overfitting 2) Training Dataset 3) Hyperparameter 4) Epoch 5) Training parameter (5)
+6 Explain the structure of a Recurrent Neural Network (RNN). List different RNN architectures and explain any two (5)
+with example.
+7 What are Linear Regression and Logistic regression techniques used for? Why should we not use Linear Regression for the classification task? Justify (5)
+your answer.
+-----End-----
+Page #3

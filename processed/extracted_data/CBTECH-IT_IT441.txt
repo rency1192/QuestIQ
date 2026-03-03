@@ -1,0 +1,132 @@
+Exam Date & Time: 21-Dec-2020 (02:00 PM - 05:45 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Seventh Semester of B. Tech Examination (IT)
+December 2020
+Data Science [IT441]
+Marks: 70 Duration: 225 mins.
+Section - I MCQ
+
+1 A __________________ is a repository of information collected from multiple sources, over a history of time, (1)
+stored under a unified schema, and used for data analysis and decision support
+Data
+Database Data warehouse Data Science
+Mining
+2 If the predicted value for a data point differs greatly from the given value, then the given value may be (1)
+considered as _________________.
+Missing value Incomplete value Inconisitent Outlier
+3 Incomplete data may come from______________. (1)
+All of
+Not applicable data Different considerations between the time when the Human/hardware/software
+the
+value when collected data was collected and when it is analyzed problems
+above
+4 Missing data may be due to____________ (1)
+not register
+inconsistent with other data not entered certain data may not be All of
+equipment history or
+recorded data and thus due to considered important at the the
+malfunction changes of the
+deleted misunderstanding time of entry above
+data
+5 The stronger the association of the two variables, the closer the Pearson correlation coefficient, r, will be to (1)
+either Zero or > Zero depending on whether the relationship is positive or negative, respectively.
+True False
+6 Identify the possible median value from the below graph. (1)
+28 29 26 30
+7 If we plot xyz database distribution that shows positively skewed distribution which is having median of 50, (1)
+Identify the true statement from the available options?
+
+A. Mean > B. Mean < C. Mode < D. Mode > A and C B and D
+50 50 50 50 both both
+8 Which of the following is a kind of data warehouse application? (1)
+A. Transaction B. Information C. Data
+D. Both B and C
+Processing Processing Mining
+9 Unstructured data allows____________ (1)
+Queries over anonymous
+Complex Joining Textual Queries None of Above
+nodes
+10 Low Transactions are categorized by____________ (1)
+Both OLAP and
+OLAP OLTP MOLAP
+OLTP
+11 Which one of the following works as master - worker fashion? (1)
+Graph
+NoSql HDFS RDBMS
+Database
+12 Independent data mart is created because ________________ (1)
+An organization Focuses on An organization Focuses on An organization Focuses on both long None of
+short term business objectives long term business objectives term and short-term business objectives Above
+13 (1)
+Identify the number of categories available into above Bar chart.
+9 7 8 10
+14 Careful integration of the data from multiple sources may help reduce/avoid redundancies and inconsistencies (1)
+and improve mining speed and quality.
+True False
+15 Which of the following are the advantage/s of Decision Trees? (1)
+Possible Scenarios Use a white box model, If given Worst, best and expected values can be All of the
+can be added result is provided by a model determined for different scenarios mentioned
+16 Match the Application Area with Use Cases. (5)
+Healthcare - Genetics and genomics
+
+Marketing - Optimum online route prediction
+Gaming - Risk Analytics
+Finance - Audience identification/Customer Segmentation
+Aviation - Object Recognition
+Section - II A Descriptive Question
+
+17 Consider the set of data below, (5)
+5,10,11,13,15,35,50,55,72,150,204,215
+1)Partition it into four bins using equal width partitioning.
+2)Perform smoothing by bin boundary and bin means.
+3) How do you identify outliers from data?
+Section - II B Descriptive Questions
+
+18 What is the output at each stage (Map, Split, combiner, reducer etc.) of Map-Reduce if the given input is (5)
+following.
+Today is Monday.
+Tomorrow is Wednesday.
+The day before tomorrow is Monday.
+19 Suppose that a data warehouse consists of the three dimensions city, parts, and person, and the measures (5)
+selling count. What specific OLAP operations should be performed in order to list the following.
+a. Which part has the highest selling in Bhuj?
+b. In which city Part-P3 has the highest selling?
+c. Rahul purchased which parts the most from Baroda city?
+d.Cumulatively which city stores has the highest selling of part- P2?
+e. Overall which part is highest purchased by Ravi?
+20 Why is Data Visualization Important? What are the different plots that you can use for basic Statistical (5)
+Descriptions of given data? Explain each plot with an example.
+21 A data warehouse can be modeled by either a star schema or a snowflake schema. Briefly describe the (5)
+similarities and the differences of the two models, and then analyze their advantages and disadvantages with
+regard to one another. Give your opinion of which might be more empirically useful and state the reasons
+behind your answer.
+22 Suppose a hospital tested the age and body fat data for 09 randomly selected adults with the following (5)
+Result
+Calculate pearson product moment coefficient. Are these two variables positively or negatively correlated?
+Section - III A Descriptive Question
+
+23 Briefly outline the major steps of decision tree classification. Suppose you have roughly classified a set of your (5)
+previous e-mail messages as junk, unimportant, normal, or important. Describe how a decision tree algorithm
+may take this as the training set to automatically classify new e-mail messages. You may draw the sample tree
+to support your answer.
+
+Section - III B Descriptive Questions
+
+24 Given the set of numbers that represents the percentage achieved by ten students. (5)
+25, 28, 29, 29, 30, 34, 35, 35, 37, 38
+a) What is Inter Quartile Range (IQR) of the data?
+b) Draw boxplot from the above data. Mention outlier if any.
+25 You are given 14 samples. They are divided into two classes: Positive and Negative. Which attribute is selected as (5)
+root attribute using decision tree induction using Gain Ratio selection method.
+26 Use the two methods below to normalize the following group of data:202, 303, 404, 606, 1001 (5)
+a) min-max normalization by setting min = 0 and max = 1
+b) z-score normalization
+Comment on which method you would prefer to use for the given data, giving reasons as to why?
+27 What is Feature selection? Explain various attribute subset selection methods with their applicability in real (5)
+world.
+28 Consider the following database for a chain of DVD Stores - (5)
+DVDS (Dvdnum, Company, Title, Total_stock, price)
+DVDSTORE(Storenum, City, State, Zip, Inventory_value)
+STOCK (Storenum, Dvdnum, Qty)
+Clearly state any reasonable assumptions you make. Design a star schema for the data warehouse clearly
+identifying the Fact table(s), Dimension table(s), their attributes and measures.

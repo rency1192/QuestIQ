@@ -1,0 +1,191 @@
+Exam Date & Time: 21-Dec-2020 (02:00 PM - 05:45 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+CHAROTARUNIVERSITY OF SCIENCE & TECHNOLOGY
+Seventh Semester of B. Tech. Examination (CE)
+DEC-2020-JAN-2021
+BIG DATA ANALYTICS [CE441]
+Marks: 70 Duration: 225 mins.
+MCQs
+Answer all the questions.
+1 In the analysis phase which is the correct order of execution after forming unresolved logical plan (1)
+a. Determine which attributes match to the same value to give them unique.
+b. Propagate and push type through expressions.
+c. Map the name attribute.
+d. Search relation BY NAME FROM CATALOG.
+a b c d b c d a d a c b c a b d
+2 Which of the following is the Key components of Hive Architecture (1)
+User Interface Metastore Drivers All of the Above
+3 A file in HDFS that is smaller than a single block size (1)
+Cannot be stored Occupies the full Can span over Occupies only the size it needs and
+in HDFS. blocks size multiple blocks not the full block
+4 Linear Regression" is a method to predict independent variable based on values of dependent (1)
+variables.
+True False
+5 To import data to Hadoop cluster from relational database Sqoop create a map-reduce job. In this (1)
+job.
+All the data is Only the schema of Each mapper transfers tables' data Each mapper
+transferred in relational table is validated along with table's metadata (name of transfers a slice of
+one go. without fetching data. the columns etc..) Table's data
+6 Which of the following is/are not the benefits of data integration? (1)
+Reduce data Adds value to Monitoring Increase data Increase data Unify your data
+complexity big data of Data collaboration availability system
+7 According to analysts, for what can traditional IT systems does not provide a foundation when they're (1)
+integrated with big data technologies like Hadoop? i) Big data management and data mining ii) Data
+warehousing and business intelligence iii) Management of Hadoop clusters iv) Collecting and storing
+unstructured data.
+i and
+i and iii ii and iii ii, iii and iv
+ii
+8 All of the following accurately describe Hadoop, EXCEPT__________. (1)
+Distrubuted Computing
+Open-source Real-time Java-based
+Approach
+9 Logistic Regression is use to (1)
+Predict continuous dependent
+Binary base prediction Predict categorical independent variable
+variable.
+10 Which command is use for Specify the patterns to search for in the database. (1)
+FIND MATCH SEARCH MERGE
+Page #1
+11 Length of VertexId for Apache GraphX is (1)
+128-bit 32-bit 64-bit 512-bit
+12 A record deleted in HBase is not removed from Hbase immediately. Instead, it is written to another (1)
+file and marked as Delete. Such a file is Known as
+DFile Tombfire Tombstone Earmark
+13 When a Hive query joins 3 tables, How many mapreduce jobs will be started? (1)
+0 1 2 3
+14 Amazon has been collecting client reviews and feedback figures for a specific product. They have (1)
+understood that nearly ninety percentage of the reviews and feedback were frequently a 5/5 score.
+Though, of the ninety percentage, they understood that fifty percent of them were clients who did not
+have proof of shopping or clients who did not post serious reviews and feedback about the item. from
+the below, which is correct about the review and feedback figures collected in this condition
+High Low High Low
+Low Volume High Volume
+Valence Valence Veracity Veracity
+15 Mention the correct stream/order of data flow in MapReduce? (1)
+a. InputFormat
+b. Mapper
+c. Combiner
+d. Reducer
+e. Partitioner
+f. OutputFormat
+a b c e d a b c d e a c d e f a b c d e
+f f b f
+16 Assume there is file of size 514 MB stored in HDFS (Hadoop 1.x) using default block size (1)
+configuration and default replication factor. Then, how many blocks will be created in total and what
+will be the size of each block?
+8 10 12 20
+17 When a client communicates with the HDFS file system, it needs to communicate with (1)
+None of
+Only the Namenode Only the Datanode Both Namenode and Datanode
+these
+18 In Hadoop 2.x release HDFS federation means (1)
+Allowing namenodes Allow a cluster to scale by Adding more physical Allow a cluster to
+to communicate with adding more datanodes under memory to both scale by adding more
+each other. one namenode. namenode and datanode namenodes.
+19 Neo4j comes with a single, universal data import toolset that will allow you to import any of your (1)
+datasets, small or large.
+Gravity, Obesity, Springs, Gravity, Charge, Gravity,
+Charge Charge Verbosity
+20 Which MongoDB query to find the restaurants which locate in a latitude value less than -95.754168. (1)
+{
+"address": {
+"building": "1007",
+"coord": [ -73.856077, 40.848447 ],
+"street": "Morris Park Ave",
+"zipcode": "10462"
+},
+"name": "Park Bake Shop",
+"restaurant_id": "30075445"
+}
+db.restaurants.find({"address.coord"restaurants.find({"address.coord"dbs.restaurants.find({"address.coord"
+: {$lt : -95.754168}}); : {$lt : -95.754168}}); : {$lt : -95.754168}});
+Page #2
+SECTION-II DESCRIPTIVE
+Answer 5 out of 7 questions.
+21 What are the Characteristics of Big data along with types of Big data? (5)
+22 Explain Different type for data source sampling (5)
+23 Explain Map-reduce framework in detail. Draw the architectural diagram for Physical Organization of (5)
+Compute Nodes.
+24 Find WOE for given Example (5)
+Range Bins Non Events Events
+0-50 1 197 20
+51-100 2 450 34
+151-200 3 492 39
+201-250 4 597 51
+251-300 5 609 54
+251-300 6 582 55
+301-350 7 386 41
+25 Draw and Explain Hadoop architecture with proper diagram (5)
+26 What is transformation and actions in Apache Spark? Discuss various commands available for this (5)
+activities in Apache Spark?
+27 Write a MongoDB query for following task. (5)
+a.) Create database StudentInfo and make Collection with name "courseInfo" with sid, sname,
+companyName, stipend.
+b.) Insert Record into courseInfo Collection
+c.) Update stipend of all Students
+d.) create index on studentId and companyName
+SECTION-III DESCRIPTIVE
+Answer all the questions.
+28 List out advantages and disadvantages of Data Visualization. (3)
+29 What is NoSQL? What are the key components of MongoDB database? (3)
+30 List the different issues and challenges in data stream query processing. (2)
+31 Explain the differences between RDBMS and Graph Database? (2)
+32 Explain the role of building blocks like Nodes, Relationships, Properties and Labels in Neo4j? (5)
+[O (5)
+R] [OR]
+33 Write Hive queries to perform the following task with example.
+1. Create a table
+2. Divide table into related parts (partitions)
+3. Joining tables
+34 Let's build a simple recommendation engine. Starting from a known movie that you liked, write a (5)
+query to finds similar movies that you might also enjoy.
+Let A be the movie that you liked. Some other movie B should be considered for recommendation if
+A and B have at least one genre in common, at least one keyword in common, and at least one actor
+in common. Furthermore, you can calculate a similarity score as follows: 1 point for every keyword
+that A and B have in common, and 10 points for every actor the movies have in common.
+Write a query that produces recommendations for someone who liked Skyfall (2012). The results
+should give the title of each recommended movie and the similarity score, and be sorted by score:
+Page #3
+match
+YOUR-CODE-GOES-HERE
+return title, score
+order by score desc;
+[O (5)
+R] [OR]
+35 Write a MongoDB query to implement Following Task.
+Task1: Insert 10 records in the movie collection with following fields
+"title :
+writer :
+year :
+actors : [ ]"
+Task2: query the movies collection to
+1. get all documents
+2. get all documents with writer name
+3. get all documents where actors name
+4. get all documents with franchise name
+5. get all movies released in the 2019s
+6. get all movies released before the year 2020 or after 2015"
+36 Write a MongoDB Query to implement following Task. (5)
+Task 1. Create users, posts and comment collection
+Task2. Insert 3 records a users collection
+username
+first_name
+last_name
+Task 3. Insert 3 records a posts collection
+username :
+title :
+body :
+Task4. Insert 3 records a comment collection
+username:
+comment:
+post:
+Task5. Querying related collections
+find all users
+find all posts
+find all posts that was authored by < < author-name>>
+find all comments
+find all comments that was authored by < < author-name>>
+find all comments belonging to the post < < post title>>"
+-----End-----
+Page #4

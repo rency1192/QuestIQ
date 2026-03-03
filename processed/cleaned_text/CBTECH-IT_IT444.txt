@@ -1,0 +1,106 @@
+Exam Date & Time: 20-Nov-2024 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Seventh Semester of BTech.(IT)
+University Theory Examination November 2024
+Internet Of Things [IT444]
+Marks: 70 Duration: 195 mins.
+Section-I(MCQ)
+Answer all the questions. Section Duration: 40 mins
+1 Which of the following cloud platforms is commonly used in IoT applications for data storage and (1)
+analytics?
+Amazon Web Services (AWS) Microsoft Azure Google Cloud
+All of the above
+IoT IoT IoT
+2 In IoT architecture, which component is primarily responsible for collecting and sending sensor data (1)
+to the cloud for analysis?
+Cloud Data visualization
+Edge device Gateway
+server platform
+3 Which of the following protocols is widely used for data transmission in IoT devices due to its low (1)
+power consumption?
+HTTP CoAP MQTT FTP
+4 In the context of IoT, what does MQTT stand for? (1)
+Multiple Queuing Multiple Queuing Message Queuing Message Queuing
+Telegram Transport Telemetry Transport Telegram Transport Telemetry Transport
+5 Who is popular as a person to coined term IoT first time? (1)
+Kevin Kyle
+Kevin Arnold Kyle Arnold
+Ashton Ashton
+6 Browsing through websites for information is an example of _________ communication. (1)
+Interactive Pull Push Active
+7 Standard port number for secure MQTT is: (1)
+1883 8383 8183 8883
+8 Which of the following categories are used for business to consumer process and in the context of (1)
+connected cars respectively?
+Industrial IoT and Group Personal IoT and Industrial IoT and Social Social IoT and Industrial
+IoT Industrial IoT IoT IoT
+9 Which are connectivity protocols of IoT? (1)
+Wifi, BLE and
+Bluetooth, MQTT and LoRaWAN Z-wave, Zigbee and LoRaWAN All of the above
+CoAP
+10 RPL follows which routing algorithm? (1)
+Link State OSPF Distance Vector Other
+11 Which of the following OS/simulators cannot be used for IoT simulation? (1)
+Contiki/Cooja TinyOs/Tossim Weka/Matlab FreeRTOS/Win32 Simulator
+12 _________empowers IoT by bringing together everyday objects. (1)
+Intelligence Connectivity Dynamic Nature Enormous Scale
+Page #1
+13 Fog computing has ____________ and ____________ plane. (1)
+Barcode and Control and
+Control and Barcode Data and cloud
+Data data
+14 ______ allows the user to control electronic components. (1)
+Android RETful MQTT CoAP
+API API API API
+15 Which one is not the feature of M2M? (1)
+Low Mobility Low Power Consumption Time Controlled Circuit Switched
+16 Which of the following technologies can be used to ensure security and data integrity in IoT (1)
+applications?
+Cloud Secure hardware
+Blockchain All of the above
+encryption modules
+17 Which is the more challenging for IoT security? (1)
+Cloud Hardware Software Unique device identification
+18 What is the role of a "gateway" in IoT networks? (1)
+It converts and routes data
+It provides security for It only controls access It serves as an IoT
+between IoT devices and the
+all IoT applications to IoT applications development tool
+cloud
+19 Which of these is a benefit of using the Fog Computing model in IoT? (1)
+Higher power
+Increased reliance on Reduced latency and faster Exclusive use in
+consumption by IoT
+central cloud servers processing near devices financial applications
+devices
+20 The primary purpose of integrating Blockchain with IoT is: (1)
+To store sensor To secure transactions and To enable faster real- To reduce the costs of
+data offline improve data transparency time processing IoT devices
+Section II-Descriptive
+Answer 5 out of 6 questions.
+1 Discuss various fundamental characteristics of IoT in detail. List various diversified application of IoT (5)
+based on industry perspective.
+2 Implement RPL control messages using sequence diagram. Elaborate working of RPL protocol using (5)
+flowchart and example scenario.
+3 Explain IoT vulnerabilities along with obstacles and its solutions. (5)
+4 Execute IoT system for Smart Irrigation application using design methodology . (5)
+5 What is RFID? Explain the challenges and issues facing the deployment of RFID Technology. (5)
+6 Draw a neat diagram of IoT Protocol Stack and explain in detail application layer protocols. (5)
+Section III-Descriptive
+Answer 5 out of 6 questions.
+1 Create an IoT-based solution for energy management in a building that integrates renewable energy (5)
+sources (e.g., solar panels) with smart meters, IoT sensors, and cloud-based analytics.
+2 Differentiate (5)
+(i) M2M v/s IoT
+(ii) Web of Things v/s Internet of Things
+Page #2
+3 Analyze the impact of integrating artificial intelligence (AI) and machine learning with IoT applications (5)
+in areas like predictive maintenance or smart transportation.
+4 How would you integrate IoT devices with a cloud platform like AWS IoT for real-time data analytics? (5)
+5 Enlist wired and wireless connectivity for Internet of Things. Differentiate Wi-Fi v/s Zigbee v/s (5)
+Bluetooth.
+6 How effective are current IoT data security standards (like TLS, AES encryption) in protecting IoT (5)
+networks from cyber threats? Evaluate the need for new standards that can handle emerging security
+risks.
+-----End-----
+Page #3

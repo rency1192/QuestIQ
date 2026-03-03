@@ -1,0 +1,207 @@
+Exam Date & Time: 19-Dec-2025 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+B.Tech IT 5th Semester
+December - 2025
+DATA ANALYTICS AND VISUALIZATION [IT389]
+Marks: 70 Duration: 195 mins.
+Section 1
+Answer all the questions. Section Duration: 40 mins
+1 A dataset has columns: employee_id (e.g. "E102"), joining_date (2023-04-15), hours_worked (e.g. 160.5), and (1)
+department_level (e.g. "Junior", "Mid", "Senior"). Which of the following correctly identifies the data types for
+these columns?
+employee_id: Nominal,
+employee_id: Ordinal, employee_id: Continuous, employee_id: Nominal,
+joining_date: Date,
+joining_date: Continuous, joining_date: Nominal, joining_date: Discrete,
+hours_worked:
+hours_worked: Discrete, hours_worked: Continuous, hours_worked: Discrete,
+Continuous,
+department_level: Nominal department_level: Ordinal department_level: Nominal
+department_level: Ordinal
+2 In a survey dataset, the column satisfaction_level uses values ["Unsatisfied", "Neutral", "Satisfied", "Very (1)
+Satisfied"]. This is an example of which type of data?
+Nominal Ordinal Continuous Discrete
+3 A dataset contains missing values in a column household_income. The analyst observes that the distribution of (1)
+income is heavily right-skewed (many low incomes, few high incomes). Which imputation method is most
+appropriate?
+Replace missing values with Replace missing values with Drop all rows with Replace missing values with
+the mean income the median income missing values the mode of income
+4 A company finds a correlation coefficient of +0.85 between marketing_spend and monthly_revenue over past (1)
+24 months. What does this indicate?
+Higher marketing spend is Higher marketing spend is No relationship Revenue causes
+strongly associated with higher strongly associated with lower between spend and higher marketing
+revenue revenue revenue spend
+5 A dataset of employee records has missing values in the salary column due to incomplete submissions. The (1)
+analyst decides to impute missing values to maintain data integrity. Which imputation method is most
+appropriate if the salary column is normally distributed?
+Scatter Line
+Bar chart Histogram
+plot plot
+6 A startup founder wants to examine relationship between number of ads run and number of new customers (1)
+over time. Which plot best helps identify whether there is a trend or correlation?
+Line Box Scatter
+Pie chart
+plot plot plot
+7 A large dataset with thousands of points shows many overlapping points when plotted in a scatter plot. Which (1)
+technique or issue does this describe?
+Overplotting / over-lapping Missing axis Uniform
+Incorrect color scale
+points labels scaling
+8 To compare salary distributions across three departments (HR, Tech, Sales), showing medians and outliers, (1)
+which visualization is best?
+Line Box Scatter
+Histogram
+plot plot plot
+9 After mean-imputation of missing ages in a dataset, an analyst notices that the variance in age is reduced, and (1)
+relationships with other features are weakened. What disadvantage does this illustrate?
+Hard to Distortion of variable relationships & reduced Not applicable to numerical Computational
+implement variance data complexity
+Page #1
+10 A data scientist considers encoding a categorical city feature for model input. The feature values have no (1)
+inherent order (e.g., "Delhi", "Mumbai", "Chennai"). Which encoding technique is most appropriate?
+Label Encoding Ordinal Encoding One-Hot Encoding Binning
+11 A data scientist wants to visualize the spread and concentration of product prices using Seaborn. Which of the (1)
+following functions is best suited for displaying the distribution of a single continuous variable?
+seaborn.countplot() seaborn.histplot() seaborn.scatterplot() seaborn.boxplot()
+12 What is the primary purpose of exploring a dataset in the initial stages of data analysis? (1)
+To create machine To clean the To understand the data's structure, patterns, and To perform
+learning models data key characteristics statistical tests
+13 While building a bar chart of average monthly sales using Seaborn, a data visualization engineer wants to align (1)
+the visual theme with brand identity. Which parameter should they modify to apply a custom color scheme?
+hue_style bar_theme palette cmap_style
+14 A dataset containing employee salaries has a normally distributed column with occasional null values. Which of (1)
+the following imputation strategies is best suited to preserve the central tendency?
+Median Mean Zero
+Mode substitution
+imputation imputation fill
+15 While preparing a dataset of property prices that includes extreme outliers, an analyst notes a right-skewed (1)
+distribution in the price column. Which imputation method is most appropriate to handle missing values in such
+skewed data?
+Mode Forward Median
+Mean substitution
+fill fill imputation
+16 A dataset contains a categorical feature named "Product_Type" with categories like "Appliance", "Furniture", (1)
+"Clothing", and "Electronics". The categories are unordered and intended for model input. Which encoding
+strategy should be applied?
+Ordinal Encoding Frequency Encoding One-Hot Encoding Binary Encoding
+17 A Power BI analyst is building a custom formula to calculate margin percentage using the expression: (1)
+(Profit/Sales) * 100. Which component of Power BI should be used to define this custom field?
+Model View: Add Report View: Format Power Query Editor: Custom Dashboard: Slicer
+Column Panel Column Control
+18 Which of the following statements is true about using a Symbol Map in Tableau? (1)
+A Symbol Map is used to show A Symbol Map uses points or Symbol Maps are ideal for Symbol Maps are
+aggregated data values by shapes to represent individual showing patterns of used for displaying
+geographic region using color data points on a geographic density or intensity across time series data on a
+shading map a region map
+19 A data analyst at an Indian bank is working with a pandas DataFrame named transactions_df that stores customer (1)
+transaction data. The analyst wants to create a new column called 'total_amount' by multiplying the values of existing
+columns 'quantity' and 'price_per_unit'. Which of the following commands correctly performs this operation?
+transactions_df['total_amount'] transactions_df['total_amount'] transactions_df['total_amount']
+transactions_df['total_amount']
+= transactions_df['quantity'] + = transactions_df['quantity'] * = transactions_df[['quantity',
+= transactions_df.apply(sum)
+transactions_df['price_per_unit']transactions_df['price_per_unit'] 'price_per_unit']].sum(axis=1)
+20 A data analyst needs to extract specific rows and columns by their numeric index from a pandas DataFrame. (1)
+For example, selecting rows 0 through 4 and columns 0 through 2. Which pandas method supports this
+operation?
+df.select() df.loc[] df.iloc[] df.range()
+Section 2
+Answer all the questions.
+21 You are working with a dataset containing financial records from various Indian banks. Before performing (5)
+exploratory data analysis, the data must be cleaned and transformed to ensure accurate downstream modeling.
+Using pandas, describe and demonstrate the use of the following preprocessing techniques with relevant
+examples:
+Handling Duplicate Records
+Converting Data Types
+Page #2
+Binning Continuous Variables
+Applying Lambda Functions for Column Transformation
+22 An e-commerce company has customer purchase data distributed across multiple CSV files by quarter. Before (5)
+analysis, the data needs to be consolidated and structured. Using pandas, explain and illustrate with examples
+how the following operations support dataset preparation:
+Reading multiple files into a single DataFrame
+Appending rows with different schemas
+Inner Joins
+Outer Joins
+Conditional Filtering using .loc[] and Boolean masks
+23 Given the following basic scatter plot code, modify it to incorporate five enhancements: (5)
+Set the figure size to 8x5
+Use red circle markers
+Add gridlines to the chart
+Include a chart title: "Scatter Plot: Temperature vs Ice Cream Sales"
+Label axes as "Temperature (°C)" and "Sales (in Rs.)"
+24 Analyze and evaluate how sheets, dashboards, and stories in Tableau serve distinct yet interconnected (5)
+purposes in the process of visual data communication. Discuss their individual functions, interrelationships, and
+role in guiding decision-making. Support your explanation with an example of retail sales data.
+[OR] (5)
+25
+Arrange the following Tableau filters in the correct order of execution, and briefly describe the role of each. How
+does understanding this order help in improving dashboard performance and filtering behavior?
+Data Source Filter
+Extract Filter
+Context Filter
+Dimension Filter
+Measure Filter
+26 Evaluate how the roles of Data Analyst, Data Engineer, Data Scientist, and Business Analyst differ in the data (5)
+analytics lifecycle. Write a comparison of their primary responsibilities in the following areas, highlighting
+overlaps, distinctions, and their strategic importance.
+Data collection and pipeline design
+Data cleaning and transformation
+Statistical modeling and machine learning
+Business insight generation and reporting
+Section 3
+Answer all the questions.
+27 A data analyst is investigating whether there is a relationship between hours of social media advertising and (5)
+the number of new customer sign-ups across five recent digital marketing campaigns. The data collected is as
+follows:
+Hours of Advertising (X) = [5, 8, 12, 15, 20]
+New Customer Sign-ups (Y) = [100, 140, 200, 230, 300]
+Using the Pearson correlation coefficient formula, calculate step-by-step the strength and direction of the linear
+relationship between advertising hours and customer acquisition. Conclude whether the correlation is strong,
+weak, positive, or negative.
+28 Review the following business scenarios and write the names of the most suitable chart type for each. Justify (5)
+your selection based on the nature of data and visual communication objectives:
+Displaying monthly profits for two business units over a year.
+Comparing the total footfall across various store locations.
+Understanding the spread of product delivery times in minutes.
+Showing the percentage contribution of expenses across marketing channels.
+Page #3
+Visualizing the correlation between product price and units sold.
+29 The following code generates a basic line chart using Seaborn. Apply the following five visual customizations to (5)
+improve interpretability:
+Set line color to orange
+Add the title: "Sales Growth Over Time"
+Use dotted line style
+Resize the figure to 12x5
+Add axis labels: "Month" for x-axis and "Sales (₹)" for y-axis
+30 Analyze the relationship between sales and profit by applying the following task. The dataset with two (5)
+quantitative variables, sales, and profit, which include additional fields regions, and product categories. Write
+steps to accomplish this using Powerbi:
+Create a scatter plot in Powerbi for visualizing Sales vs. profit.
+Filter the chart to show data for a specific region (e.g., "East").
+Provide a summary of the analysis, explaining any key insights about how Sales and Profit
+[OR] (5)
+31
+Write steps to perform the following task in Power BI using a Dataset that includes a categorical variable,
+Product Category, and a continuous variable, Sales.
+Create a bar chart that shows the total Sales for each Product Category
+Use data labels to display the exact sales values on each bar
+Add a filter for Region to analyze how the sales distribution across Product Categories changes when
+filtering for a specific region
+32 In Tableau, different types of charts serve specific purposes in data visualization. How would you decide which (5)
+chart type to use in the following scenarios? Explain with justification:
+Comparing sales performance across multiple regions
+Showing the trend of product sales over time
+Displaying the distribution of customer ages
+Highlighting the relationship between profit and sales
+Visualizing the composition of total revenue by product category
+[OR] (5)
+33
+What are the measures and dimensions in the tableau? Compare and contrast the following terms in the
+tableau along with an example:
+Continuous measures
+Categorical measures
+Continuous dimensions
+Categorical dimensions
+-----End-----
+Page #4

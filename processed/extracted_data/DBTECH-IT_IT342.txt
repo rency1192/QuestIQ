@@ -1,0 +1,166 @@
+Exam Date & Time: 22-Dec-2020 (10:00 AM - 01:45 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Fifth Semester B.Tech. Examination (IT)
+December 2020
+Advanced Web Technologies [IT342]
+Marks: 70 Duration: 225 mins.
+Section-I MCQ
+
+1 State the following statement is True/False. (1)
+"Static variables declared in a recursive function will create multiple copies of itself while function
+call".
+True False
+2 Which of the following functions are used to add < br /> tag using php to .php file? (1)
+A. echo()
+B. print()
+C. print_r()
+D. heredoc
+A only A and B only A,B and C only B and C only
+3 "We should not use goto statements inside for/while/do...while loop in php", it is invalid statement (1)
+because____________. Select most appropriate.
+we can not do loop automatically restrict goto will create infinite calls latest version of
+unconditional jumps in usage of goto in php and between client and server if php supports goto
+web programming generates warning used in loops statement
+4 What is the output of the following PHP code? (1)
+< ?php
+$Course_title = array ("Web Technologies", "Data Science", "IoT", "Cloud Computing", "Java");
+$subset = array_slice ($Course_title,3);
+print_r ($subset);
+?>
+Array ( [0] => Cloud Array ( [0] => Web Technologies Array ( [0] Array ( [0] => IoT [1]=> Cloud
+Computing [1] => Java ) [1] => Data Science [2] => IoT ) => Java ) Computing [2] => Java )
+5 What is REST? (1)
+It is a SOAP based Web It is an architectural style for
+It is a web service It is a framework
+Service web
+6 Which of the following is not input sanitization? (1)
+Hashing/Encrypt Converting input into a format that Removing or cleaning potentially Both 1
+user input PHP supports malicious user input. and 2
+7 If one need to create an application that will be assumed by a number of closely related objects, (1)
+which class must be used in that case?
+Normal Class Static Class Abstract Class Interface
+
+8 Which of the following is/are true about PHP? select all which applies. (1)
+PHP is only PHP is only PHP is neither interpreted nor PHP is interpreted and
+interpreted language compiled language compiled language compiled language
+9 What should be the value of $password to create successful SQL injection in below query? (1)
+$sql = "select * from users where username='abc' AND pass = '$password' LIMIT 1"
+A. password' OR 1
+B. ' or 1=1
+C. password' OR 1=1--'
+D. password' and 1=1
+E. password" OR 1=1
+B and C only D only A and E only A and B only All of the mentioned
+10 Consider following code and select appropriate option/options. (1)
+< ?php
+function a(){
+}
+?>
+A. calling function a() using single argument like < ?php a(4); ?> is invalid
+B. calling function a() using multiple argument like < ?php a(4,3,2); ?> is valid
+C. calling function a() using multiple argument like < ?php a(4,3,2); ?> is invalid
+D. calling function a() using single argument like < ?php a(4); ?> is valid
+A and C only B and D only A only D only
+11 Which of the following are advantages of namespace in php ? (1)
+A. Reduce name-conflicts
+B. Reduce Memory/CPU utilization
+C. auto-loading classes if needed
+D. Allows Flexibility in code organization
+A,B, and C only B, C and D only A, C and D only A, B and D only None of the mentioned
+12 Which of the following is/are the benefits of MVC? Select all that applies. (1)
+A. Support of multiple views/model/controller for complex applications
+B. Faster development process in teams
+C. Separation of concerns
+D. Faster execution of code
+A and C only D and C only A, B and C only B, C and D only
+13 Which of the following methods sends input to a script via URL? (1)
+GET POST Both None of the mentioned
+14 Which of the following are not true about web-services in php ? (1)
+A. Web services follows Client - Server Model
+B. Web Services must requires special protocol called ' UDP ' to be supported at client
+C. Web Services can be accessed using CLI (Command line / Terminal )
+
+D. PHP can not access Web Services , which are developed in python/java
+A and C only D and B only B and C only A and D only All of the mentioned
+15 Which of the following is/are considered as pillars of OOP and natively available in PHP? (1)
+A. Objects
+B. Class
+C. Method Overloading
+D. Method Overriding
+A, C and D only B,C and D only A,B and C only A,B and D only All of the mentioned
+16 Which of the following is/are False statement/s? (1)
+A. Ajax stands for Asynchronous JavaScript and XML.
+B. Ajax is not a programming language.
+C. Ajax can only work with ASP.NET and Java/XML
+D. Ajax stands for Synchronous JavaScript and XML.
+C and D only A and C only B and D only A and B only None of the mentioned
+17 Which of the following statements are true? (1)
+A. mysqli_num_rows() returns total number of rows in given database
+B. mysqli_query() executes the given sql-statement on specific database
+C. mysqli_close() closes the mysql connection from script
+D. mysqli_fetch_array() returns array of columns from result-set
+B and D only B and A only A and D only B and C only
+18 Which of the following would be the most important reason for using web services? (1)
+Reduce the memory utilization on
+Interoperability Inversion of Control (IoC) Abstractions
+server
+19 Which PHP Error causes termination of script? (1)
+A. Warning Error
+B. Notice Error
+C. Parse/Syntax Error
+D. None of mentioned
+E. All of the mentioned
+A and B only C only B and C only A and C only E only
+20 _______________ of the following regular expressions matches any string containing one or more P. (1)
+P* P+ P? P#
+Section-II (A) - Descriptive Question
+
+1 Explain the following terms: (5)
+1) HTTPS
+2) AJAX
+
+3) Web Server
+4) Web Browser
+5) Dynamic web page
+Section-II (B) - Descriptive Question
+
+1 What is the role of session and cookies in state management? Give an explanation using a suitable (5)
+example with PHP code.
+2 Describe concept of inheritance and access modifiers with illustration in PHP. (5)
+3 Describe Following PHP function for MySQL and illustrate with an example. (Any Three) (5)
+1. mysqli_real_connect()
+2. mysqli_field_count()
+3. mysqli_data_seek()
+4. mysqli_fetch_row()
+4 What is JSON data format and how it is useful? Read the following PHP array and convert it into (5)
+JSON objects using PHP.
+$c = array(array(11,22,33));
+5 Explain following PHP operators with its usage. (5)
+1) ??
+2) ===
+3) .=
+4) %=
+5) **
+Section-III (A) - Descriptive Question
+
+1 What is Regular Expression and Quantifiers in Regex? Write a regular expression to validate the (5)
+Mobile Number in PHP.
+Regex should accept following mobile numbers:
++91-9998889990
++919998889990
+09998889990
+Section-III (B) - Descriptive Question
+
+6. ​if above mentioned instructions are not followed, any marks may not be given.
+
+1 What is Web Service? How to access a RESTful Web service using PHP? Explain with an example. (5)
+2 Differentiate the following. (5)
+1. $_GET and $_POST .
+2. include() and require().
+3 Write a PHP code to upload a file onto the server with following constraints. (5)
+1. Check whether the same file exist or not.
+2. File extension must be .pdf/.doc/.docx
+3. Max size of file is 10 MB.
+4 What is SQL injection ? How can it be mitigated in php application? List all SQL-injection prevention (5)
+method and explain any two in detail.
+5 What is dynamic function call in php? Explain with a suitable example. (5)

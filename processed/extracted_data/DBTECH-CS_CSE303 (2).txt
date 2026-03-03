@@ -1,0 +1,139 @@
+Exam Date & Time: 18-Dec-2025 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Faculty of Technology and Engineering
+University Theory Examination (Supplementary Exam - 1) December 2025
+B.Tech [CSE] - 5th Semester
+MACHINE LEARNING [CSE303]
+Marks: 70 Duration: 195 mins.
+Section - I
+
+1 For an e-commerce recommendation system, which approach offers the MOST ethical and (1)
+responsible use of ML?
+Using only engagement- Showing ads based Using the algorithms with Ignoring fairness
+maximizing predictions only on past clicks user-consent data usage in predictions
+2 A model makes correct predictions but doctors cannot understand why. Which issue is highlighted? (1)
+Dimensionality
+Overfitting Explainability Underfitting
+reduction
+3 A hospital wants automated image diagnosis. Which deep learning algorithm suits this problem? (1)
+RNN K-means LSTM CNN
+4 If an RL agent explores too much and learns slowly, which issue is occurring? (1)
+Too much exploration (high ε in ε-
+High discount factor Overexploitation Sparse states
+greedy)
+5 In a Smart Taxi problem, choosing a wrong route results in a negative reward. Which RL concept is (1)
+applied?
+Policy Policy
+Punishment-based feedback Clustering
+gradient gradient
+6 What does the 'reward' in RL represent? (1)
+The loss Feedback indicating the quality of an
+The number of states Agent's policy
+function action
+7 When comparing PCA with association rule mining, PCA should be chosen when: (1)
+The goal is to find item co- The dataset contains only Dimensionality Rules must be
+occurrence patterns categorical variables reduction is needed interpreted
+8 K-means performs poorly on datasets with irregular cluster shapes because: (1)
+It uses cosine It assumes spherical It does not support numeric It cannot compute
+similarity clusters data centroids
+9 A company wants to segment customers based on purchase patterns. Which algorithm is MOST (1)
+suitable?
+Naïve
+K-means Logistic Regression Linear Regression
+Bayes
+10 What is the main goal of clustering? (1)
+Predicting Evaluating Grouping similar data
+Maximizing accuracy
+labels performance points
+11 For imbalanced classification, which metric is more appropriate than accuracy? (1)
+RMSE Adjusted R² Mean Absolute Error F1-score
+
+12 A model performs well on training data but poorly on test data. Which conclusion is most accurate? (1)
+Underfitting is Overfitting is
+Perfect generalization Model is unbiased
+occurring occurring
+13 Logistic regression is primarily used for___________. (1)
+Clustering
+Predicting continuous values Binary classification Reinforcement learning
+data
+14 Considering the concept, Feature Selection vs. Feature Transformation. Which situation justifies (1)
+feature selection?
+When new synthetic When dimensionality When irrelevant features When sampling
+variables are needed must be increased degrade model performance is required
+15 Which type of data is most suitable for measuring similarity using Euclidean Distance? (1)
+Nominal Ordinal Continuous Numerical Categorical
+Data Data Data Data
+16 What is the main purpose of data cleaning? (1)
+To increase model To remove or correct inaccurate To visualize To normalize features
+complexity records data only
+17 Appropriate chart for visualizing the trend in the data, is _________. (1)
+Scatter
+Line chart Pie chart Bar chart
+plot
+18 A company deploys an ML model but observes biased outputs for certain groups. Which ML issue is (1)
+likely responsible?
+Feature
+Overfitting Ethical concerns and fairness Linear separability
+scaling
+19 A bank wants to predict whether a customer will default on a loan using historical data. Which ML (1)
+type should they apply?
+Unsupervised Supervised Reinforcement Clustering
+20 Which of the following best describes Machine Learning? (1)
+A system that A method to enable machines A hardware-dependent A technique to manually
+follows fixed rules to learn from data learning process design outputs
+Section - II
+
+1 Explain the different types of Machine Learning with suitable real-world application. Discuss how (5)
+each type learns from data.
+2 Discuss the major issues encountered during data cleaning. Explain the techniques used to resolve (5)
+each of these issues with suitable examples.
+3 Given the following scenario, evaluate which data visualization method-graph or table-is more (5)
+appropriate and justify your choice with clear reasoning. Also discuss the limitations of the method
+you did not choose.
+Scenario:
+A retail company wants to compare monthly sales trends across four product categories over a
+period of two years. The management wants to identify patterns, seasonal variations, and sudden
+changes in sales.
+4 A teacher wants to analyze the variation in scores of a small group of students. The test scores (out (5)
+of 50) of 7 students are as follows:
+Scores: 18, 22, 25, 30, 35, 40, 45
+
+(a) Draw a box plot for the above dataset.
+(b) Based on the scenario, explain how a box plot is helpful for understanding student performance.
+5 Using k-Nearest Neighbors, predict the missing value for X1=25, X2=9. Use k = 3 and Euclidean (5)
+distance for your calculations.
+6 Discuss the concept of the hyperplane, margin, and support vectors with the help of a neat diagram (5)
+for Support Vector Machines (SVM). Also describe how SVM handles non-linearly separable data
+using kernel functions.
+Section - III
+
+1 Given a DBSCAN distance matrix with some missing values, calculate the missing distances using (5)
+Euclidian Distance algorithm. Use the parameters ϵ = 2.5 and MinPts = 2. After determining the
+complete
+distance matrix, perform DBSCAN clustering and identify the core points, border points, and noise
+points in
+the dataset.
+
+2 Compare the two techniques used in hierarchical clustering. Describe how each technique begins the (5)
+clustering process and how clusters are incrementally merged or split as the algorithm proceeds.
+Also, discuss how different linkage criteria (single linkage, complete linkage, and average linkage)
+affect the shape of the resulting clusters and the interpretation of the dendrogram. Illustrate your
+explanation with suitable examples.
+3 A large manufacturing company wants to apply machine learning to improve product quality and (5)
+operational efficiency. The company collects extensive data from factory sensors, machinery logs,
+production images, and technician reports. They are considering using CNNs and RNNs to analyze
+visual inspection data and equipment time-series signals, and NLP to interpret maintenance notes
+and technical documents. Based on this scenario, answer the following:
+1. How can CNNs and RNNs be used in this setting to enhance manufacturing processes?
+2. Explain the role of NLP in extracting useful insights from technician reports and
+documentation.
+3. Do you think Explainable AI and Responsible AI are important in this context? Why?
+4 Given the following sample set of transactions from a retail store: (5)
+Using the Apriori algorithm, find all frequent itemsets. Consider min_sup=60%.
+5 Explain the concept of Q-learning in reinforcement learning. Describe how the Q-value is updated (5)
+using the Q-learning update rule and discuss the role of the learning rate, discount factor, and
+exploration-exploitation strategy in this process. Provide a small example to illustrate how an agent
+improves its policy over time.
+6 Given the following dataset with one independent variable x and one dependent variable y: (5)
+Using simple linear regression, determine the regression line equation and predict the value of y
+when x = 6.

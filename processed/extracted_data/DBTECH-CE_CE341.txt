@@ -1,0 +1,145 @@
+Exam Date & Time: 22-Dec-2020 (10:00 AM - 01:45 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Microprocessor Architectures and Assembly Programming [CE341]
+Marks: 70 Duration: 225 mins.
+Section-1
+
+Questions 1 to 20 are compulsory questions.
+Segment Translation is optional in 80386 (1)
+1
+Ture False
+Select correct operating mode of 80286 (1)
+2
+Real Time Real Address Protected Real Address None of the
+mode mode mode above
+Index point of Data segment is stored in _________register (1)
+3
+Source Destination
+Instruction Pointer Stack Pointer
+Index Index
+Microcontroller is also known as Processor on Chip (1)
+4
+True False
+The segment descriptor provides the processor with the data it needs to map a (1)
+5
+logical address into a linear address
+True False
+Execute the instruction received from the instruction unit is responsibility of (1)
+6
+Address Execution ALU None of the
+Unit Unit Unit above
+The selector portion of a logical address identifies a descriptor by specifying a (1)
+7
+descriptor table and indexing a descriptor within that table.
+True False
+The paging unit is enabled only in _______.. (1)
+8
+none of the
+Virtual Mode Addressing Mode protected mode
+mentioned
+8086 has _____ bit address bus? (1)
+9
+04 08 16 20
+The unit that is responsible for calculating the address of instructions, and data (1)
+10
+that the CPU wants to access is ______
+Address Instruction Control
+Bus unit
+Unit Unit Unit
+Select the correct pin-value combination for maximum mode 8086 performing IO (1)
+11
+read operation
+= 0 , = 1 ,
+= 0 , = 1 ,
+= 0 , = 0 = 0 , = 1
+= 1 , = 0 , = 1 , = 1 ,
+, = 1 , = 0
+= 0 = 0
+What will be the output of the given program? (1)
+12
+MOV AL, 03H
+MOV BX, 0027H
+IDIV BL
+
+AX = 0000, DX = AH = 03, AL = AX = 0009, DX = AH = 00, AL =
+0003 00 0000 09
+Which one of the following is true? (1)
+13
+SHL and SHA XCHG can exchange ROL and ROR POPF is one
+gives same two memory location give same operant
+output value output instruction
+JNP will perform jump on odd parity. (1)
+14
+TRUE FALSE
+Select the correct effective address for the given instruction. Consider the values (1)
+15
+of other registers as given.
+36524 36254 35524 36624
+Select the correct from following. (1)
+16
+Bus controller 8284 chip
+CS logic generate DMUX generate
+generate control generate control
+control signal in control signal in
+singles in maximum signal in maximum
+maximum mode. maximum mode.
+mode. mode.
+Which pin of 8086 indicates presence of data in bus? (1)
+17
+ALE A0
+Which one of the following is not the assembler directive? (1)
+18
+INTR TYPE ORG OFFSET
+DMA used for faster data transfer. (1)
+19
+TRUE FLASE
+Which one of the following interconnection methods of microprocessors is not (1)
+20
+using shared memory?
+Linked input
+Multiport memory Shared bus
+output
+Secrion-2
+
+Attempt any 5 out of 7 questions (i.e. from 21 to 27)
+Draw a clean diagram with all indication wherever it is required.
+Identify the operation performed by 8086 to complete this instruction. Also draw (5)
+21
+timing diagram for that operation. Assume 8086 is operating in minimum mode.
+MOV AX, 5000[BX][SI]
+Explain star and regular interconnection topology. (5)
+22
+Write an 8086-assembly code to find addition of first six elements of Fibonacci (5)
+23
+series. Store the answer of the same in ANS variable.
+Draw the internal architecture of 8086. (5)
+24
+Write an 8086-assembly code to check given string is palindrome or not. Program (5)
+25
+should print "VALID" on output in case of palindrome string and "INVALID"
+otherwise.
+Explain intersegment direct and indirect addressing modes with example. (5)
+26
+
+27 List all flags of 8086. For all flags, also specify what the 0 and 1 values indicate. (5)
+Section-3
+
+Attempt any 5 out of 7 questions (i.e. from 28 to 34)
+Draw a clean diagram with all indication wherever it is required.
+Draw architecture of 80286 and explain functionality of any two units. (5)
+28
+By taking suitable diagram, explain the difference between microprocessor and (5)
+29
+microcontroller.
+Draw architecture of 80386 and explain functionality of units. (5)
+30
+List and explain different segments of 8086. (5)
+31
+By drawing suitable chart, explain segmentation. Also write pros and cons of (5)
+32
+segmentation.
+What is LDTR and GDTR? Why hidden descriptor is kept into microprocessor. (5)
+33
+Write the basic differences among Intel core 3, 5, and 7 series. Draw and explain (5)
+34
+Ryzen microarchitecture?

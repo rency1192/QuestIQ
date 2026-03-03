@@ -1,0 +1,133 @@
+Exam Date & Time: 23-Dec-2020 (02:00 PM - 05:45 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Advanced Computing (IT442) & Advanced Computing - ELECTIVE-III (IT405.01)
+Advanced Computing [IT442]
+Marks: 70 Duration: 225 mins.
+Section 1
+
+1 Cluster computing is (1)
+Group of similar Group of similar Group of heterogeneous Group of different
+resource in different resources in the local resource in the wide-area resource in the local
+network area network network area network
+2 What is the name of the software that lets you run multiple operating systems on one physical (1)
+server?
+Windows Virtual
+Hypervisor None of above
+Server machine
+3 Which type of cluster is also known as a failover cluster? (1)
+Network Load balancing High availability clusters High-performance Multi-Node
+clusters (HA) Clusters cluster
+4 Which of the following is the type of deployment model? (1)
+Public cloud Private cloud Hybrid cloud All of Above
+5 Cloud computing is a combination which existing computing technologies? (1)
+Utility, Distributed, Utility, Cluster, Virtualization, Utility, Distributed, Cluster, Grid,
+Grid Grid Cluster Virtualization
+6 Which of the following type of virtualization is found in hypervisor such as Xen? (1)
+Full virtualization Paravirtualization Storage virtualization None of the above
+7 Which of the following is not essential characteristics of cloud computing? (1)
+Broad network
+Resource pooling Delayed elasticity Measured Service
+access
+8 Dom 0 in Xen is an optional VM, without it you can run HVM and PV VM on Xen hypervisor. (1)
+True False
+9 The marketing department in your company wants to deploy a web application but does not want to (1)
+have to manage servers or clusters. A good option for them is:
+Compute App Kubernetes
+Cloud Functions
+Engine Engine Engine
+10 You have been asked to set up network security in a virtual private cloud. Your company wants to (1)
+have multiple subnetworks and limit traffic between the subnetworks. Which network security control
+would you use to control the flow of traffic between subnets?
+Identity access
+Firewall Router IP address table
+management
+11 Azure Bastion is a fully managed PaaS service that provides secure and seamless RDP and SSH (1)
+access to your virtual machines directly through the Azure Portal.
+False True
+
+12 Containers _____________ from its environment. (1)
+manage isolate store Load
+software software software software
+13 Containers and virtual machines have similar ____________ benefits. (1)
+Resource Resource Isolation and Resource Resource Isolation and
+Isolation Allocation Allocation Management
+14 What is the use of cggroup? (1)
+Provide a name to the
+Specific set of resources. Remove VM Start the Docker
+container
+15 What is the use of UTS namespace in docker technology? (1)
+Managing
+Isolation Version identifiers. Managing network interfaces
+files
+16 Which one is not the characteristic of Microservice? (1)
+Centralized Products not Decentralized
+Design for failure
+Governance Projects Governance
+17 Monitoring Microservices in order of ______________? (1)
+Deployment
+Magnitude harder Health status All of the above
+map
+18 Which command to fetch system uptime using ansible? (1)
+ansible -m command -a ansible -m command -a ansible -m command -a ansible -m command
+'Uptime' Servers 'uptime' Servers 'uptime' servers -a 'uptime'
+19 Jenkins is just a framework, it achieves Continuous Integration with the help of ______?. (1)
+Jenkins REST J-Unit
+Library Plugins
+API API
+20 An app for a finance company needs access to a database and a Cloud Storage bucket. There is no (2)
+predefined role that grants all the needed permissions without granting some permissions that are not
+needed. You decide to create a custom role. When defining custom roles, you should follow which of
+the following principles?
+Defense in
+Rotation of duties Least privilege Least principle
+depth
+Section 2
+
+21 Math the followings (7)
+Develop and deploy highly scalable containerized applications on a fully managed
+App Engine -
+serverless platform.
+Cloud Run - Build, test, and deploy on our serverless CI/CD platform.
+Providing hardware to run specialized workloads with low latency on Google
+Bare Metal -
+Cloud.
+Fully managed relational database service for MySQL, PostgreSQL, and SQL
+Cloud Build -
+Server.
+BigQuery - Build highly scalable applications on a fully managed serverless platform.
+Serverless, highly scalable, and cost-effective multi cloud data warehouse
+Cloud SQL -
+designed for business agility.
+Cloud Scalable pay-as-you-go functions as a service (FaaS) to run your code with zero
+-
+Functions server management.
+
+22 Explain cloud security threats with proper real-life examples and their solution. (6)
+23 Write a short note on the Service Layer Agreement (SLA) with proper examples. (6)
+24 The overall availability of an IT resource is usually expressed as a percentage of up-time. For (6)
+example, resources that are always available will have an up-time of 100%. Find out
+downtime/unavailability of the following cases in seconds for 1 week time with proper calculations for
+SLA level of (1) 99.95% (2) 99.99% (3) 99.999 %
+[O (6)
+R] Explain Kubernetes Architecture with a suitable diagram.
+25
+[O (6)
+R] Why is Jenkins used in a real-life situation? Explain the Jenkins for CI/CD Automation with a proper
+26 diagram.
+Section 3
+
+27 Explain cluster computing with advantages and disadvantages. List out the applications of cluster (6)
+computing.
+[O (6)
+R] Explain grid computing architecture. List out the applications and advantages of grid computing.
+28
+29 Explain in brief the cloud service models with proper examples. (6)
+[O (6)
+R] Why do people migrate from traditional computing to cloud computing? Explain different types of
+30 cloud deployment models with suitable examples.
+31 What is virtualization? What are the advantages of virtualization? Explain types of virtualization in (6)
+detail.
+[O (6)
+R] What is Hypervisor? Explain types of Hypervisor with proper examples. Explain Xen hypervisor in
+32 detail.
+33 What is Docker? Explain Docker with a suitable diagram. (6)

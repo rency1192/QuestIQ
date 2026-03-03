@@ -1,0 +1,189 @@
+Exam Date & Time: 17-Dec-2025 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Faculty of Technology and Engineering
+University Theory Examination (Backlog) December 2025
+Fifth Semester of B.Tech. (CSE)
+SOFTWARE ENGINEERING [CSE301]
+Marks: 70 Duration: 195 mins.
+I - Multiple Choice Questions
+Answer all the questions. Section Duration: 40 mins
+1 A development team is unsure of what the customer really wants. Which SDLC activity will most (1)
+reduce this uncertainty?
+Coding Requirement Analysis Deployment Maintenance
+2 A company must release frequent software updates based on real-time market changes. Which (1)
+model provides the highest adaptability?
+Waterfall Spiral Agile V-Model
+3 During requirement analysis, two stakeholders give conflicting demands. What should the engineer (1)
+do first?
+Implement Ignore Pick one
+Facilitate negotiation and clarification
+both both randomly
+4 Which situation best justifies using the Spiral Model? (1)
+Fully understood, stable High-risk, evolving Small academic Fixed-budget government
+requirements requirements projects projects
+5 Agile includes several lightweight methods. Which of the following is not part of the Agile family? (1)
+Scrum DSDM XP V-Model
+6 A developer tests each function immediately after writing it. This demonstrates: (1)
+System Unit Acceptance Load
+testing testing testing testing
+7 A tester does not know the internal code logic but tests based on inputs and expected outputs. This (1)
+is:
+White-box Black-box Stress Mutation
+testing testing testing testing
+8 A team wants to reduce defects earlier in development. TDD helps because it: (1)
+Reduces coding Enforces writing tests before Eliminates Removes need for
+effort code documentation debugging
+9 An automated testing pipeline stops a faulty build before deployment. This represents: (1)
+Manual
+Code review Continuous Integration Refactoring
+testing
+10 A bug reported by users during production is fixed immediately. Which maintenance type? (1)
+Preventive Corrective Adaptive Perfective
+11 A project manager wants to predict the team's effort and completion time before starting the project. (1)
+Which technique is most relevant?
+Debugging Estimation Deployment Regression
+12 CI/CD is MOST useful when a team needs to: (1)
+Page #1
+Reduce hardware Automate frequent builds & Improve UI Increase manual
+cost deployments design testing
+13 A project schedule must show task durations, overlaps, and dependencies. Which tool is ideal? (1)
+Entity-relationship BPM State
+Gantt chart
+diagram diagram diagram
+14 Which UML diagram is mainly used to model the structure of a system during object-oriented design? (1)
+Activity Use-case Class Sequence
+diagram diagram diagram diagram
+15 A banking application needs to ensure that a failed transaction never processes twice. Which testing (1)
+type ensures this reliability?
+Stress Regression Recovery Usability
+testing testing testing testing
+16 The purpose of balancing a DFD is to ensure: (1)
+Each diagram uses Data flows entering and leaving All diagrams have the same Arrows never
+only one process remain consistent across levels number of data stores cross each other
+17 A Level-0 DFD shows a single process that receives 3 inputs and produces 4 outputs. After (1)
+decomposition into a Level-1 DFD, which condition MUST hold true?
+Each sub-process must The total inputs and The Level-1 DFD must Level-1 DFD must
+have exactly the same outputs to the system must introduce new external include at least one
+number of I/O flows remain identical entities data store
+18 A manager wants to minimize defects introduced during integration of new modules. Which practice (1)
+helps MOST?
+Black-box Beta
+Pair programming Continuous Integration (CI)
+testing release
+19 Which of the following is a key characteristic of the 'Critical Path Method' (CPM) in project (1)
+scheduling?
+It ensures tasks are It involves It is used only for
+It identifies the longest path of
+completed as quickly as identifying project software maintenance
+dependent tasks in a project
+possible. risks. projects.
+20 What is the primary purpose of a Work Breakdown Structure (WBS) in software project (1)
+management?
+To allocate resources To define the scope To decompose the project into To identify
+to project tasks of the project manageable tasks and deliverables potential risks
+II
+Answer 5 out of 6 questions.
+21 A software company is developing a smart home automation application integrating mobile apps, IoT (5)
+devices, and cloud services. The application allows users to control lights, temperature, security
+cameras, and appliances from a single interface. The team includes software developers, IoT
+engineers, UX designers, QA engineers, and a project manager.
+As the Project Manager, explain which team structure (e.g., functional, matrix, or projectized) is most
+suitable for coordinating multi-disciplinary tasks. Justify your choice and describe how roles and
+responsibilities should be assigned to ensure efficient communication, clear accountability, and timely
+project completion. Include examples of how tasks like mobile app development, IoT integration, and
+cloud analytics would be coordinated.
+22 A software development company is maintaining multiple applications for different clients: (5)
+1. A school management system must be updated to comply with a new government mandate for
+online attendance reporting. The development team modifies the database, reporting modules, and
+notification system to meet the legal requirements.
+Page #2
+2. A travel booking app has received feedback from users requesting faster search results, smoother
+booking flow, and enhanced recommendation features. Developers optimize backend queries,
+redesign user interfaces, and add caching for better performance.
+3. A hospital inventory system has accumulated unused and redundant code over years of updates.
+To reduce future maintenance issues, developers refactor code, modularize functions, and improve
+documentation without adding new features.
+4. An online banking portal encounters a critical bug during peak hours where fund transfers
+intermittently fail. Developers quickly identify the issue in the transaction module, fix it, test it, and
+deploy a patch to restore functionality.
+Identify the type of maintenance for each scenario (Adaptive / Perfective / Preventive / Corrective)
+and provide brief justifications.
+23 A University Event Management System (UEMS) is being developed to allow students to register for (5)
+events, submit feedback, view schedules, participate in discussion forums, receive notifications, and
+access analytics dashboards. Additional features include real-time updates on event changes, group
+chat for event participants, and automated reporting for organizers.
+As a Quality Assurance Engineer, explain how different levels of testing ensure quality:
+• Unit Testing: Testing individual modules, e.g., registration or feedback submission.
+• Integration Testing: Checking how modules like registration, notifications, and analytics work
+together.
+• System Testing: Testing the full system to ensure it functions as intended under various scenarios.
+• Acceptance Testing: Ensuring the system meets user expectations and requirements before
+deployment.
+Provide specific examples for each testing level in the UEMS.
+24 A university wants a Digital Hostel Management System where students can apply for hostel rooms, (5)
+check room availability, submit complaints, and receive notifications. Wardens should be able to
+approve room requests, update vacancy details, and track complaints. Admins will manage student
+records and monitor hostel reports.
+Draw a UML Use Case Diagram identifying Student, Warden, and Admin with include/extend
+relationships where required.
+Write two user stories following the format:
+As a ___, I want to ___, so that ___.
+25 A small clinic decides to create a Patient Queue and Token Management System. (5)
+Patients can generate tokens online, view estimated waiting time, and receive alerts before their turn.
+Doctors can track their queue, update consultation status, and access basic patient details.
+Receptionists will register walk-in patients and manage daily schedules. The clinic stresses secure
+access and speedy processing to handle morning rush hours.
+Write four functional and four non-functional requirements of the system.
+Apply the MoSCoW method to prioritize them and justify the top two Must-Have requirements.
+26 A training institute introduces a Short Course Enrollment System. (5)
+Students may register for a maximum of two short courses per batch. Each course can have up to 80
+registrations. Students should be able to log in, view course details, choose a course, check seat
+availability, and receive enrollment confirmation or rejection if full.
+Draw a UML Class Diagram with Student, Course, key attributes, multiplicities, and constraints.
+Then draw a Sequence Diagram showing interactions such as login(), viewCourses(),
+chooseCourse(), checkSeats(), and confirmEnrollment().
+III
+Answer 5 out of 6 questions.
+27 A college wants to build an Online Alumni Interaction Portal where alumni can register, update (5)
+profiles, post job opportunities, view events, and participate in discussions. Coordinators will manage
+event postings and verify alumni accounts. The system should be simple, responsive, and easy for
+users to navigate.
+Using Function Point Analysis (FPA), estimate the system size by assuming reasonable values for EI,
+EO, EQ, ILF, and EIF.
+Then use the Basic COCOMO (semi-detached) model to estimate the total effort (person-months)
+and total cost.
+Show all assumptions and calculations clearly
+28 How Gantt Chart is differing from PERT Chart? (5)
+Consider a software project with 5 tasks T1-T5. Duration of the 5 tasks (in days) is 15,10,12,25 and
+10respectively. T2 and T4 can start when T1 is complete T3 can start when T2 is complete. T5 can
+start when both T3 and T4 are complete.
+Page #3
+i) Draw the Gantt Chart and PERT charts for the project
+ii) When is the latest start date of the task T3? What is the slack time of the task T4? What is the
+slack time of the task T2?
+29 A company plans to build a Home Delivery and Logistics Tracking System for grocery orders. (5)
+The system must show order status in real-time, track delivery vehicles, communicate delays to
+customers, and allow quick adjustments in delivery routes. The company expects frequent changes
+since customer feedback will drive new feature additions such as contactless delivery, recommended
+items, and digital wallet integration. However, delivery accuracy and system stability are essential for
+customer trust.
+Discuss whether Agile is appropriate by explaining:
+• Reasons supporting Agile adoption
+• Challenges where Agile may not fit well
+• A final recommendation (Agile / Traditional / Hybrid) with justification
+30 A retail chain has been using a legacy point-of-sale (POS) system for more than 10 years. The (5)
+system is outdated, lacks documentation, and is incompatible with mobile and web platforms. The
+company wants to modernize the system to support mobile payments, online inventory tracking, and
+faster transaction processing while keeping the core billing and inventory functionalities intact.
+As a Software Engineer, explain how reverse engineering would involve analyzing the existing code,
+understanding database structures, and documenting legacy workflows. Then, describe how re-
+engineering would include redesigning modules for mobile compatibility, optimizing performance, and
+implementing modern interfaces. Provide specific examples from the POS system.
+31 "FastEats" is a local food delivery company that wants to implement an online Food Ordering System. (5)
+Currently, customers call the restaurant to place orders, leading to errors, delayed deliveries, and
+difficulty tracking payments. Draw a Data Flow Diagram (DFD) upto level 1 for the FastEats Food
+Ordering System, showing how customers, restaurant staff, delivery staff, and admin interact with the
+system to place orders, process payments, update order status, and generate reports."
+32 Which are the various umbrella activities of SQA? Explain the merits and demerits of ISO 9001. (5)
+-----End-----
+Page #4

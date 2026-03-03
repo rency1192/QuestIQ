@@ -1,0 +1,207 @@
+Exam Date & Time: 18-Dec-2025 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Faculty of Technology and Engineering
+University Theory Examination (Supplementary Exam - 1) December 2025
+Fifth Semester of B.Tech (IT)
+ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING [IT362]
+Marks: 70 Duration: 195 mins.
+Section 1
+
+1 A data analyst is building a customer segmentation model but has no labeled data. What learning approach should be (1)
+considered, and why might it be appropriate for this situation?
+Supervised learning Unsupervised learning Reinforcement learning Transfer learning
+2 A machine learning engineer needs to estimate monthly sales figures using past values. What type of model would be (1)
+best suited for data?
+Logistic regression Decision trees Linear Regression K-means
+3 While analyzing classification results, a team notices high accuracy but poor performance on the minority class. What (1)
+metric should they prioritize to address this issue?
+Accuracy F1-score RMSE R-squared
+4 You're choosing between Random Forest and Gradient Boosting for a large dataset with noise. What trade-off are you (1)
+considering when selecting Gradient Boosting?
+Lower training Better handling of
+Less overfitting Higher interpretability
+time noise
+5 A model predicts customer churn with 95% accuracy, but most customers don't churn. Why is accuracy a misleading (1)
+metric here?
+It ignores correct It doesn't measure performance on all It doesn't penalize wrong It is unaffected by class
+predictions classes predictions imbalance
+6 You're building a neural network and want it to learn complex non-linear functions. Which component is most crucial to (1)
+enabling this capability?
+Weight initialization Activation function Number of epochs Dropout layer
+7 What will be R2 Score of following regression problem if the predicted values (yp​) and the actual values (y) for 5 data (1)
+points are as follows:
+yp=[3.5,2.8,4.2,5.0,3.7]
+y=[3.7,3.0,4.0,4.8,3.9]
+0.91 0.87 0.94 0.89
+8 In dimensionality reduction using PCA, why might removing low-variance features improve model performance? (1)
+It increases model It reduces useful It improves training speed
+It reduces noise and redundancy
+complexity information only
+9 While tuning hyperparameters of a deep learning model, training accuracy improves but validation accuracy drops. (1)
+What's the most likely cause?
+Data leakage Overfitting High bias Incorrect model architecture
+10 What will be the Root Mean Squared Error (RMSE) for the following regression problem if the predicted values (yp​) and (1)
+actual values (y) for 5 data points are given as follows?
+Y = 8, 12, 15,20, 25
+Yp=10,11,17,18,27
+1.84 2.20 2.50 3.00
+11 A text classification model is trained using a bag-of-words approach. What limitation does this introduce in understanding (1)
+sentence meaning?
+Over-reliance on rare Loss of semantic and word order Increased model It works only with labeled
+words context complexity data
+12 You're training a model and want to ensure it generalizes well. What would be an effective strategy to monitor and (1)
+validate its performance?
+Train on the entire Use regularization on training Apply test data in every
+Use cross-validation
+dataset data epoch
+
+13 A model performs well on training data but fails to generalize on test data. What architectural or training change can (1)
+reduce this gap?
+Decrease data Add more layers to the
+Use dropout and reduce Remove validation set
+size model
+14 In reinforcement learning, what makes the exploration-exploitation trade-off challenging to manage? (1)
+It leads to It always chooses the best Balancing between trying new actions vs It requires
+deterministic behavior known action optimizing rewards is dynamic supervised labels
+15 Consider Apple's Siri: (1)
+1. It can answer factual questions, set reminders, and play music on request.
+2. It relies on pre-programmed algorithms and machine learning models, but it cannot truly "understand" or "reason"
+like a human.
+3. It cannot perform tasks outside its narrow domain, unlike a human who can adapt to entirely new tasks without
+retraining.
+Based on this scenario, which category does Siri best fit into?
+Strong Weak
+Artificial General Intelligence Artificial Super intelligence
+AI AI
+16 A financial company deploys an AI-based stock trading system that: (1)
+1. Continuously analyzes market data and company reports.
+2. Chooses buy/sell actions that maximize expected profit given current information and constraints.
+3. Does not try to mimic human emotions like fear or greed but instead optimizes outcomes
+Which concept in AI does this behavior best reflect?
+Pattern
+Human-like intelligence Rationality Creativity
+Recognition
+17 A neuron has two inputs: x1=2, x2=3. (1)
+The corresponding weights are w1=0.4 , w2=0.6, and the bias is b=1
+The activation function used is the step function:
+What is the output of the neuron?
+0 1 2.8 3.8
+18 A data scientist uses TF-IDF to vectorize a text corpus. Why might this fail to capture deeper semantic relationships (1)
+between words?
+It requires a GPU to It ignores It treats each word independently and misses It overemphasizes frequent
+process punctuation contextual meaning terms
+19 A classification model shows high precision but low recall. In which scenario is this performance imbalance problematic? (1)
+Predicting customer Filtering spam Diagnosing a rare
+Forecasting sales
+churn emails disease
+20 A company uses a simple linear regression model but notices poor predictions for non-linear relationships. What is the (1)
+most effective improvement approach?
+Increase dataset Switch to non-linear models like decision trees or polynomial Reduce
+Remove outlier
+size regression features
+Section 2
+
+1 Compare the three primary types of machine learning methods, namely, (5)
+Supervised,
+Unsupervised
+Reinforcement learning
+By discussing their real-world applications and typical challenges. Illustrate your answer with one relevant example for
+each method to demonstrate how they are applied in practice.
+2 What is the concepts of overfitting and underfitting in the context of classification models and how these issues can be (5)
+identified using metrics accuracy and f1 Score. Provide examples to support your explanation with figures and suggest
+methods to mitigate both overfitting and underfitting.
+3 Create a model for the classification of MNIST data into 10 classes using the following code for an Artificial neural (5)
+
+network. In the model below, write code in the line "#Your Code" to make this model work.
+## Code Start
+image_size = 784
+num_classes = 10
+model = Sequential()
+model.add(Dense(units=32, activation='sigmoid', input_shape=(image_size,)))
+model.add(Dense(units=10, activation='sigmoid'))
+model.add(Dense(units=32, activation='sigmoid'))
+#Your Code
+model.compile(optimizer="sgd", loss='categorical_crossentropy', metrics=['accuracy'])
+history = model.fit(x_train, y_train, batch_size=128, epochs=4, verbose=False, validation_split=0.1)
+## Code End
+Calculate the total parameters and write down all hyper parameters used with values in code.
+[OR] (5)
+4
+Critically evaluate how following convolution operation affect the performance and representational power of a
+Convolutional Neural Network (CNN). Use examples and visual illustrations and justify which of these components play
+the most significant role in feature extraction.
+Convolution operation
+Stride
+Filter Size
+Padding
+Pooling
+5 Consider the following binary classification results from a model: (5)
+Actual = [1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1]
+Predicted = [1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0]
+Create the confusion matrix based on the given data.Calculate the following metrics:
+Accuracy
+Precision
+Recall
+F1 Score
+Interpret the values of these metrics and discuss the model's performance.
+6 A company wants to estimate the value of a property based on its features using K-Nearest Neighbors (KNN). Below is the (5)
+dataset of properties with their corresponding features and prices:
+Now, the company wants to estimate the price of a property with the following features:
+Size: 1550 sq ft
+Number of Bedrooms: 3
+Distance to City Center: 4 miles
+Give all steps and calculation for estimation using Euclidean distance and consider value of k is 3
+[OR] (5)
+7
+A bank uses KNN with Euclidian distance to decide Loan Eligibility (Yes/No) based on two features:
+Income (₹ L)Spending Score (0-100). You are given the dataset below:
+A new applicant Q(Income = 5.2, Spending = 48)needs to be assessed for the loan eligibility. Create ML system with the
+use of K = 3 and K = 5 to calculate the eligibility of Q for the loan. Write any assumption you may take with justification.
+
+Section 3
+
+1 Construct a labeled diagram illustrating the architecture of a Generative Adversarial Network (GAN). Explain the training (5)
+interaction between the generator and discriminator through this architecture. Additionally, identify and discuss key
+challenges faced during GAN training, supporting your explanation with relevant examples.
+2 You have two containers, a 5-liter jug and a 3-liter jug, with no measuring markings. You also have access to an (5)
+unlimited water source. How can you measure exactly 4 liters of water using these two jugs?
+Constraints:
+You can fill a jug completely.
+You can empty a jug completely.
+You can pour water from one jug to another until the receiving jug is full or the pouring jug is empty.
+Provide a step-by-step solution to measure exactly 4 liters using logical reasoning.
+[OR] (5)
+3
+In context of Artificial Intelligence(AI), explain following terms with example.
+Search Technique
+Strong AI
+Weak AI
+The Turing Test
+The concept of Rationality
+4 A company wants to predict whether a job applicant will be selected based on three categorical features: Degree, Experience, (5)
+and Certification.
+Analyze how Naive Bayes would classify an applicant with Degree = M.Tech, Experience = High, and Certification = Yes.
+Break down the role of each attribute in computing the posterior probabilities, and explain how their contributions lead to the
+final prediction.
+5 Evaluate how the Bag of Words (BoW) and TF-IDF techniques represent following texts as numerical vectors. (5)
+Text 1: "Data science is an interdisciplinary field."
+Text 2: "Data science uses algorithms to extract insights."
+For each method:
+Mention how the text is transformed.
+Compare their ability to capture meaningful differences between the sentences.
+Justify which method is more effective for use in a document classification task, and under what conditions.
+Support your answers with reasoning based on vocabulary, frequency, and term importance.
+6 Explain following key terms in the context of K-Means Clustering with example. (5)
+Centroids
+Inertia
+Cluster Assignment
+Elbow Method
+Silhouette Score
+[OR] (5)
+7
+Mention the role of following key terms in PCA ( Principal component analysis) with example.
+Covariance Matrix
+Eigen values
+Eigen vectors
+Principal Components
+Projection Error

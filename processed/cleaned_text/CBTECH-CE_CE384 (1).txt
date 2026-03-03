@@ -1,0 +1,153 @@
+Exam Date & Time: 19-Dec-2025 (01:15 PM - 04:30 PM)
+CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY
+Fifth Semester of BTECH(CE)
+University Theory Examination (Supplementary Exam - 1) December 2025
+ADVANCED WEB TECHNOLOGY (PROGRAMME ELECTIVE-I) [CE384]
+Marks: 70 Duration: 195 mins.
+SECTION-I
+Answer all the questions. Section Duration: 40 mins
+1 Which of the following is a primitive data type in JavaScript? (1)
+Array Object String Function
+2 Which method is used to add an element at the end of an array? (1)
+shift() push() pop() unshift()
+3 What will be the scope of a variable declared using let inside a function? (1)
+Function scope Global scope Block scope Object scope
+4 Which function does not have a name in JavaScript? (1)
+Recursive function Nested function Callback function Anonymous function
+5 Which operator is used to check both value and type equality? (1)
+== = === !=
+6 Which concept allows a function to call itself? (1)
+Closure Recursion Callback Hoisting
+7 Which keyword is used to define a class in JavaScript? (1)
+object prototype class function
+8 Which feature allows objects to inherit properties from other objects? (1)
+Encapsulation Polymorphism Prototyping Abstraction
+9 Which statement is used to export a module in ES6? (1)
+require export include module
+10 Dynamic module loading in JavaScript is achieved using: (1)
+import() require() export() import
+11 Which keyword is used inside generators to pause execution? (1)
+await yield stop return
+12 Which approach was introduced to avoid callback hell? (1)
+Closures Promises Objects Arrays
+13 Which keyword is used to handle promises synchronously? (1)
+async wait yield await
+14 Which of the following represents asynchronous iteration? (1)
+for loop forEach for await...of while loop
+15 Promises can have which states? (1)
+Pending, Fulfilled, Start, Execute, True,
+Open, Close
+Rejected End False
+Page #1
+16 Node.js is built on which JavaScript engine? (1)
+SpiderMonkey Chakra V8 Nashorn
+17 Which component handles asynchronous operations in Node.js? (1)
+Call Stack Event Loop Heap Thread Pool
+18 Which package manager comes bundled with Node.js? (1)
+yarn npm pnpm composer
+19 Blocking code in Node.js affects: (1)
+Database only CPU usage Event loop File system
+20 Which HTTP method is generally used to send data to a server? (1)
+GET POST HEAD OPTIONS
+SECTION-II
+Answer all the questions.
+21 What is asynchronous iteration in JavaScript? (5)
+Explain the use of for await...of loop with an example. How does it differ from normal synchronous
+iteration?
+22 Draw and explain the architecture of Node.js. Discuss the role of the Event Loop (5)
+and describe its phases in detail.
+23 A Flipkart wants to develop a Mobile Inventory Management System using Object-Oriented (5)
+JavaScript. The platform sells different types of mobile phones such as Smartphones, Feature
+Phones, and Gaming Phones. Each mobile product has attributes like model name, price, quantity in
+stock, warranty period, and brand.
+The system should allow Flipkart to:
+1. Add mobile products with details: model name, brand, price, quantity, and category
+2. Display all available mobile products with their complete details
+3. Apply discounts on selected mobile categories such as festival offers on Smartphones or
+Gaming Phones
+Write a proper Object-Oriented JavaScript program to implement the above requirements.
+24 Analyze the below code and write the output in correct execution order with (5)
+proper justification based on the JavaScript Event Loop.
+// code start here
+console.log('1. Starting file processing...');
+setTimeout(() => {
+console.log('3. Preparing printing...');
+}, 1500);
+console.log('2. Fetching file details...');
+console.log('4. Connecting to printer...');
+fetch("https://jsonplaceholder.typicode.com/users/2")
+.then(response => response.json())
+.then(data => {
+console.log('6. File received:', data);
+});
+console.log('5. File request sent');
+console.log('7. Creating internal promise...');
+const promise = new Promise((resolve, reject) => {
+setTimeout(() => {
+console.log('9. Promise resolved - File is ready!');
+}, 800);
+});
+promise.then(msg => {
+console.log(msg);
+});
+console.log('8. Promise object created');
+// code end here
+25 CHARUSAT developed using Node.js handles multiple routes and serves course-related information
+Page #2
+CHARUSAT developed using Node.js handles multiple routes and serves course-related information
+(5)
+dynamically.
+Write a Node.js program to implement the following routes:
+/ or /courses
+Display: "Welcome to CHARUSAT University Course Portal"
+/course?id=< index>
+Display: "This is the detail page for a selected course"
+/api
+Read a local courses.json file synchronously and send the JSON response.
+Invalid routes
+Respond with 404 - Page Not Found
+Use only core Node.js modules such as http and fs.
+Assume courses.json is present in the root folder.
+[OR] (5)
+26
+A college portal collects student information.
+Using JavaScript regular expressions, validate the following:
+1. Enrollment number in the format 23CEXXX (XXX represent number).
+2. Student name containing only alphabets and spaces.
+Write the required JavaScript code and explain the pattern used.
+SECTION-III
+Answer all the questions.
+27 Explain MVC pattern in project development. What are the advantages of using MVC. Discuss all (5)
+component with example.
+28 List the differences between sessions and cookies in web applications. Also, (5)
+identify one real-world situation where you would prefer to use a session instead
+of a cookie, and another situation where using a cookie would be more
+appropriate.
+29 A Hospital Patient Management System is built using Node.js and Sequelize ORM. (5)
+The database contains a table named Patients with columns:
+id, name, doctor_assigned, admission_date, and bill_amount.
+Write suitable Sequelize queries to:
+1. Insert a new patient record into the Patients table.
+2. Update the bill amount of a patient.
+3. Delete a patient record using the patient id.
+30 Create server using node and Express Js. Discuss advantages of Express Js. (5)
+31 An online store stores order details in a MongoDB collection named orders. (5)
+The collection currently contains:
+[
+{ "_id": 501, "customer": "Raj", "amount": 2500, "status": "Placed" },
+{ "_id": 502, "customer": "Simran", "amount": 1800, "status": "Shipped" },
+{ "_id": 503, "customer": "Vikas", "amount": 3200, "status": "Delivered" }
+]
+The operations team needs to:
+1. Add a new order for Anjali with an amount of ₹2100 and status Placed.
+2. Retrieve complete details of order placed by Vikas.
+3. Update the status of Simran's order from Shipped to Delivered.
+4. Remove the order of Raj due to cancellation.
+Write suitable MongoDB queries to perform these tasks.
+[OR] (5)
+32
+Compare Relational Database with non-relational database. Discuss the advantages of MongoDB
+and what are the applications of MongoDB.
+Page #3
+-----End-----
+Page #4
