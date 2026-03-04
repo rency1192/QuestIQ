@@ -1,6 +1,7 @@
 from scripts.extractor import PDFExtractor
 from scripts.cleaner   import TextCleaner
-
+from scripts.parser    import MetadataParser
+from pathlib           import Path
 
 class Pipeline:
 
@@ -37,6 +38,23 @@ class Pipeline:
             output_folder = self.paths["extracted_data"]
         )
         cleaner.run()
+        
+        # Step 3 — Parse metadata from cleaned files
+        print(f"\n{'='*50}")
+        print(f"STEP 3 — METADATA PARSING")
+        print(f"{'='*50}\n")
+
+        parser = MetadataParser()
+        files  = list(Path(self.paths["extracted_data"]).glob("*.txt"))
+
+        for file_path in files:
+            print(f"  Parsing: {file_path.name}")
+            with open(file_path, 'r', encoding='utf-8') as f:
+                text = f.read()
+
+            metadata = parser.parse(text, file_path.name)
+            parser.print_summary(metadata)
+            print()
 
         print("\n" + "="*50)
         print("  PIPELINE COMPLETE")
