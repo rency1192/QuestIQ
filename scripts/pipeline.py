@@ -1,14 +1,16 @@
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from scripts.extractor import PDFExtractor
 from scripts.cleaner   import TextCleaner
-from scripts.parser    import MetadataParser
+from scripts.parser    import MetadataParser, QuestionParser
 from pathlib           import Path
+
 
 class Pipeline:
 
     def __init__(self):
-        # ── Paths ───────────────────────────────
         base = r"G:\NLP_Project"
-        
 
         self.paths = {
             "text_based":     f"{base}\\question_bank\\raw_papers\\text_based",
@@ -38,24 +40,44 @@ class Pipeline:
             output_folder = self.paths["extracted_data"]
         )
         cleaner.run()
-        
-        # Step 3 — Parse metadata from cleaned files
+
+        # Step 3 — Parse metadata + questions
         print(f"\n{'='*50}")
-        print(f"STEP 3 — METADATA PARSING")
+        print(f"STEP 3 - PARSING METADATA & QUESTIONS")
         print(f"{'='*50}\n")
 
-        parser = MetadataParser()
-        files  = list(Path(self.paths["extracted_data"]).glob("*.txt"))
+        metadata_parser = MetadataParser()
+        question_parser = QuestionParser()
+        files           = list(
+            Path(self.paths["extracted_data"]).glob("*.txt")
+        )
+
+        all_results = []
 
         for file_path in files:
             print(f"  Parsing: {file_path.name}")
+            print(f"  {'-'*40}")
+
             with open(file_path, 'r', encoding='utf-8') as f:
                 text = f.read()
 
-            metadata = parser.parse(text, file_path.name)
-            parser.print_summary(metadata)
-            print()
+            # Parse metadata
+            metadata  = metadata_parser.parse(text, file_path.name)
+            metadata_parser.print_summary(metadata)
+
+            # Parse questions
+            questions = question_parser.parse(text)
+            question_parser.print_summary(questions)
+
+            # Store result
+            all_results.append({
+                "metadata":  metadata,
+                "questions": questions
+            })
 
         print("\n" + "="*50)
-        print("  PIPELINE COMPLETE")
+        print(f"  PARSING COMPLETE")
+        print(f"  Total papers parsed: {len(all_results)}")
         print("="*50)
+
+        return all_results
