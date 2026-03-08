@@ -4,6 +4,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from scripts.extractor import PDFExtractor
 from scripts.cleaner   import TextCleaner
 from scripts.parser    import MetadataParser, QuestionParser
+from scripts.database  import DatabaseManager
 from pathlib           import Path
 
 
@@ -61,15 +62,12 @@ class Pipeline:
             with open(file_path, 'r', encoding='utf-8') as f:
                 text = f.read()
 
-            # Parse metadata
             metadata  = metadata_parser.parse(text, file_path.name)
             metadata_parser.print_summary(metadata)
 
-            # Parse questions
             questions = question_parser.parse(text)
             question_parser.print_summary(questions)
 
-            # Store result
             all_results.append({
                 "metadata":  metadata,
                 "questions": questions
@@ -79,5 +77,22 @@ class Pipeline:
         print(f"  PARSING COMPLETE")
         print(f"  Total papers parsed: {len(all_results)}")
         print("="*50)
+
+        # Step 4 — Store to database
+        print(f"\n{'='*50}")
+        print(f"STEP 4 - STORING TO DATABASE")
+        print(f"{'='*50}\n")
+
+        db = DatabaseManager(self.paths["database"])
+        db.connect()
+        db.create_tables()
+
+        for result in all_results:
+            paper_id, inserted = db.store_result(result)
+            print(f"  Stored: {result['metadata']['source_file']}"
+                  f" -> paper_id={paper_id}, questions={inserted}")
+
+        db.print_stats()
+        db.disconnect()
 
         return all_results
