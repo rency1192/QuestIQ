@@ -71,6 +71,23 @@ class DatabaseManager:
         self.conn.commit()
         print("  Tables created successfully")
 
+        # add tokens column if not exists
+        try:
+            self.conn.execute(
+                "ALTER TABLE questions ADD COLUMN tokens TEXT")
+            self.conn.commit()
+        except:
+            pass
+
+    # ── PAPER EXISTS ─────────────────────────────
+    def paper_exists(self, source_file: str) -> bool:
+        cursor = self.conn.cursor()
+        cursor.execute(
+            "SELECT id FROM papers WHERE source_file = ?",
+            (source_file,)
+        )
+        return cursor.fetchone() is not None
+
     # ── INSERT PAPER ─────────────────────────────
     def insert_paper(self, metadata: dict) -> int:
         cursor = self.conn.cursor()

@@ -1,11 +1,12 @@
 import sys
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-from scripts.extractor import PDFExtractor
-from scripts.cleaner   import TextCleaner
-from scripts.parser    import MetadataParser, QuestionParser
-from scripts.database  import DatabaseManager
-from pathlib           import Path
+from scripts.extractor    import PDFExtractor
+from scripts.cleaner      import TextCleaner
+from scripts.parser       import MetadataParser, QuestionParser
+from scripts.database     import DatabaseManager
+from scripts.preprocessor import TextPreprocessor
+from pathlib              import Path
 
 
 class Pipeline:
@@ -27,72 +28,88 @@ class Pipeline:
         print("  QUESTION BANK PIPELINE STARTING")
         print("="*50)
 
-        # Step 1 — Extract text from PDFs
-        extractor = PDFExtractor(
-            input_folder  = self.paths["text_based"],
-            output_folder = self.paths["cleaned_text"],
-            log_file      = self.paths["log"]
-        )
-        extractor.run()
-
-        # Step 2 — Clean extracted text
-        cleaner = TextCleaner(
-            input_folder  = self.paths["cleaned_text"],
-            output_folder = self.paths["extracted_data"]
-        )
-        cleaner.run()
-
-        # Step 3 — Parse metadata + questions
-        print(f"\n{'='*50}")
-        print(f"STEP 3 - PARSING METADATA & QUESTIONS")
-        print(f"{'='*50}\n")
-
-        metadata_parser = MetadataParser()
-        question_parser = QuestionParser()
-        files           = list(
-            Path(self.paths["extracted_data"]).glob("*.txt")
-        )
-
-        all_results = []
-
-        for file_path in files:
-            print(f"  Parsing: {file_path.name}")
-            print(f"  {'-'*40}")
-
-            with open(file_path, 'r', encoding='utf-8') as f:
-                text = f.read()
-
-            metadata  = metadata_parser.parse(text, file_path.name)
-            metadata_parser.print_summary(metadata)
-
-            questions = question_parser.parse(text)
-            question_parser.print_summary(questions)
-
-            all_results.append({
-                "metadata":  metadata,
-                "questions": questions
-            })
-
-        print("\n" + "="*50)
-        print(f"  PARSING COMPLETE")
-        print(f"  Total papers parsed: {len(all_results)}")
-        print("="*50)
-
-        # Step 4 — Store to database
-        print(f"\n{'='*50}")
-        print(f"STEP 4 - STORING TO DATABASE")
-        print(f"{'='*50}\n")
-
+        # open DB first — single source of truth
         db = DatabaseManager(self.paths["database"])
         db.connect()
         db.create_tables()
 
-        for result in all_results:
-            paper_id, inserted = db.store_result(result)
-            print(f"  Stored: {result['metadata']['source_file']}"
-                  f" -> paper_id={paper_id}, questions={inserted}")
+        extractor       = PDFExtractor(
+            input_folder  = self.paths["text_based"],
+            output_folder = self.paths["cleaned_text"],
+            log_file      = self.paths["log"]
+        )
+        cleaner         = TextCleaner(
+            input_folder  = self.paths["cleaned_text"],
+            output_folder = self.paths["extracted_data"]
+        )
+        metadata_parser = MetadataParser()
+        question_parser = QuestionParser()
 
+        pdfs    = list(Path(self.paths["text_based"]).glob("*.pdf"))
+        new     = 0
+        skipped = 0
+
+        print(f"\n{'='*50}")
+        print(f"STEPS 1-3 — EXTRACT / CLEAN / STORE")
+        print(f"{'='*50}\n")
+
+        for pdf_path in pdfs:
+            txt_name = pdf_path.stem + ".txt"
+
+            # single DB check gates all 3 steps
+            if db.paper_exists(txt_name):
+                print(f"  Skipping (already in DB): {pdf_path.name}")
+                skipped += 1
+                continue
+
+            print(f"\n  Processing: {pdf_path.name}")
+            print(f"  {'-'*40}")
+
+            # Step 1 — Extract
+            text = extractor.extract_text(pdf_path)
+            if not text.strip():
+                print(f"  FAILED extraction: {pdf_path.name}")
+                continue
+            extractor.save_text(pdf_path.name, text)
+            print(f"  Extracted: {len(text)} chars")
+
+            # Step 2 — Clean
+            cleaned     = cleaner.clean_text(text)
+            cleaned_out = (Path(self.paths["extracted_data"])
+                           / txt_name)
+            with open(cleaned_out, 'w', encoding='utf-8') as f:
+                f.write(cleaned)
+            print(f"  Cleaned: {len(text)} -> {len(cleaned)} chars")
+
+            # Step 3 — Parse + Store
+            metadata  = metadata_parser.parse(cleaned, txt_name)
+            metadata_parser.print_summary(metadata)
+
+            questions = question_parser.parse(cleaned)
+            question_parser.print_summary(questions)
+
+            paper_id, inserted = db.store_result({
+                "metadata":  metadata,
+                "questions": questions
+            })
+            print(f"  Stored: paper_id={paper_id},"
+                  f" questions={inserted}")
+            new += 1
+
+        print(f"\n  Done: {new} new, {skipped} skipped")
         db.print_stats()
         db.disconnect()
 
-        return all_results
+        # Phase 2 Step 1 — Preprocessing
+        print(f"\n{'='*50}")
+        print(f"PHASE 2 STEP 1 - PREPROCESSING")
+        print(f"{'='*50}\n")
+
+        preprocessor = TextPreprocessor(self.paths["database"])
+        processed    = preprocessor.process_all()
+
+        if processed:
+            preprocessor.save_tokens(processed)
+            preprocessor.print_summary(processed)
+        else:
+            print("  All questions already preprocessed - skipping")
