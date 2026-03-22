@@ -57,6 +57,7 @@ class DatabaseManager:
                 marks        REAL,
                 compulsory   INTEGER DEFAULT 1,
                 source_file  TEXT,
+                keywords     TEXT,
                 FOREIGN KEY (paper_id) REFERENCES papers(id)
             );
 

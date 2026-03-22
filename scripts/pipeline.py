@@ -6,6 +6,9 @@ from scripts.cleaner      import TextCleaner
 from scripts.parser       import MetadataParser, QuestionParser
 from scripts.database     import DatabaseManager
 from scripts.preprocessor import TextPreprocessor
+from scripts.vectorizor   import Vectorizer
+from scripts.searcher     import Searcher
+from scripts.analyzer     import Analyzer
 from pathlib              import Path
 
 
@@ -21,6 +24,7 @@ class Pipeline:
             "database":       f"{base}\\database\\questions.db",
             "outputs":        f"{base}\\outputs",
             "log":            f"{base}\\logs\\extraction_log.txt",
+            "vectors":        f"{base}\\vectors",
         }
 
     def run(self):
@@ -113,3 +117,67 @@ class Pipeline:
             preprocessor.print_summary(processed)
         else:
             print("  All questions already preprocessed - skipping")
+            
+        # Phase 2 Step 2 — Vectorizer
+        print(f"\n{'='*50}")
+        print(f"PHASE 2 STEP 2 - VECTORIZING")
+        print(f"{'='*50}\n")
+
+        vectorizer = Vectorizer(
+            db_path        = self.paths["database"],
+            vectors_folder = self.paths["vectors"]
+        )
+        vectorizer.build()
+        vectorizer.print_sample()
+        
+    # Phase 2 Step 3 — Test Searcher
+        print(f"\n{'='*50}")
+        print(f"PHASE 2 STEP 3 - SEARCH TEST")
+        print(f"{'='*50}\n")
+
+        searcher = Searcher(
+            db_path        = self.paths["database"],
+            vectors_folder = self.paths["vectors"]
+        )
+        searcher.load()
+
+        # test 1 — basic topic search
+        print("  Test 1: Topic search — gradient descent")
+        results = searcher.search("gradient descent")
+        searcher.print_results(results)
+
+        # test 2 — topic + subject filter
+        print("  Test 2: Topic + subject filter")
+        results = searcher.search(
+            "sorting algorithm",
+            subject="Machine Learning"
+        )
+        searcher.print_results(results)
+
+        # test 3 — similar question detection
+        print("  Test 3: Similar question detection")
+        results = searcher.find_similar(
+            "Explain machine learning algorithms with example"
+        )
+        searcher.print_results(results)
+        
+    # Phase 2 Step 4 — Analyzer
+        print(f"\n{'='*50}")
+        print(f"PHASE 2 STEP 4 - ANALYZER")
+        print(f"{'='*50}\n")
+
+        from scripts.analyzer import Analyzer
+        analyzer = Analyzer(
+            db_path        = self.paths["database"],
+            vectors_folder = self.paths["vectors"]
+        )
+        analyzer.load()
+
+        print("  Test 1: Most repeated in ML")
+        results = analyzer.most_repeated(
+            subject="Machine Learning", top_n=5)
+        analyzer.print_repeated(results)
+
+        print("  Test 2: Most repeated all subjects")
+        results = analyzer.most_repeated(top_n=5)
+        analyzer.print_repeated(results)

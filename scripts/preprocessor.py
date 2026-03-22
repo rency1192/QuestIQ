@@ -17,6 +17,33 @@ class TextPreprocessor:
             'not', 'no', 'nor', 'against',
             'what', 'which', 'who', 'how', 'why', 'when'
         }
+        
+        # add domain stopwords — too common in exam questions
+        self.stop_words |= {
+            # existing ones
+            'explain', 'describe', 'define', 'write',
+            'discuss', 'elaborate', 'illustrate', 'state',
+            'list', 'mention', 'give', 'show', 'find',
+            'calculate', 'compute', 'derive', 'prove',
+            'example', 'suitable', 'briefly', 'short',
+            'note', 'answer', 'question', 'following',
+            'given', 'using', 'based', 'compare', 'contrast',
+
+            # add generic tech words
+            'algorithm', 'method', 'approach', 'technique',
+            'concept', 'model', 'system', 'process',
+            'type', 'different', 'various', 'following',
+            'suitable', 'proper', 'real', 'world',
+            
+            'diagram', 'differentiate', 'statement',
+            'code', 'phase', 'number', 'one', 'new',
+            'time', 'used', 'want', 'use', 'need',
+            'make', 'build', 'create', 'design',
+            'high', 'low', 'large', 'small',
+            'first', 'second', 'third', 'last',
+            'two', 'three', 'four', 'five',
+            'name', 'form', 'way', 'part', 'role'
+        }
 
     def clean(self, text: str) -> list:
         if not text:
